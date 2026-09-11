@@ -1,0 +1,800 @@
+[
+  {
+    "id": "chunk_0",
+    "domain": "Neurology",
+    "content_type": "diagnostic_criteria",
+    "severity_context": "emergency",
+    "keywords": [
+      "Ischemic Stroke",
+      "FAST Criteria",
+      "Penumbra",
+      "tPA",
+      "Thrombolysis",
+      "NIHSS",
+      "Golden Hour"
+    ],
+    "content": "## Ischemic Stroke: FAST Criteria & Acute Management\n\n### Definition\nIschemic stroke: Sudden-onset focal neurological deficit due to cerebrovascular occlusion causing infarction. Accounts for ~87% of all strokes.\n\n### FAST Screening Criteria\n| Sign | Assessment |\n|------|------------|\n| **F** - Face | Ask patient to smile; observe for unilateral facial droop |\n| **A** - Arms | Ask patient to raise both arms; observe for unilateral drift or weakness |\n| **S** - Speech | Ask patient to repeat a phrase; listen for slurring, aphasia |\n| **T** - Time | Record exact time of symptom onset; call emergency services immediately |\n\n### Extended BE-FAST Criteria\n- **B**: Balance loss (sudden)\n- **E**: Eyes (sudden vision loss, diplopia)\n\n### Penumbra Concept\nIschemic core: Irreversibly infarcted tissue (CBF <10 mL/100g/min). Penumbra: Salvageable tissue surrounding core (CBF 10–20 mL/100g/min). Target of acute reperfusion therapy.\n\n### tPA Eligibility Window\n| Parameter | Threshold |\n|-----------|----------|\n| Symptom onset to treatment | ≤4.5 hours |\n| Age | ≥18 years |\n| BP before tPA | <185/110 mmHg |\n| Blood glucose | 50–400 mg/dL |\n| INR (if on warfarin) | ≤1.7 |\n| Platelet count | ≥100,000/μL |\n\n### Alteplase Dosing\n- 0.9 mg/kg IV (max 90 mg)\n- 10% bolus over 1 min, remainder over 60 min\n\n### Red Flags (Absolute tPA Contraindications)\n- Active intracranial hemorrhage on CT\n- Prior intracranial hemorrhage history\n- Ischemic stroke within 3 months\n- Active internal bleeding\n- BP >185/110 mmHg refractory to treatment\n- Platelet count <100,000/μL\n- Recent intracranial/spinal surgery within 3 months"
+  },
+  {
+    "id": "chunk_1",
+    "domain": "Neurology",
+    "content_type": "diagnostic_criteria",
+    "severity_context": "emergency",
+    "keywords": [
+      "Glasgow Coma Scale",
+      "GCS",
+      "Consciousness",
+      "Neurological Assessment",
+      "Traumatic Brain Injury",
+      "Herniation"
+    ],
+    "content": "## Glasgow Coma Scale (GCS)\n\n### Definition\nStandardized neurological assessment tool evaluating level of consciousness via three components. Range: 3 (deepest coma/death) to 15 (fully alert).\n\n### Scoring Table\n| Component | Response | Score |\n|-----------|----------|-------|\n| **Eye Opening (E)** | Spontaneous | 4 |\n| | To verbal command | 3 |\n| | To pain | 2 |\n| | None | 1 |\n| **Verbal Response (V)** | Oriented | 5 |\n| | Confused | 4 |\n| | Inappropriate words | 3 |\n| | Incomprehensible sounds | 2 |\n| | None | 1 |\n| **Motor Response (M)** | Obeys commands | 6 |\n| | Localizes pain | 5 |\n| | Withdraws from pain | 4 |\n| | Abnormal flexion (Decorticate) | 3 |\n| | Abnormal extension (Decerebrate) | 2 |\n| | None | 1 |\n\n### Interpretation\n| GCS Total | Severity |\n|-----------|----------|\n| 14–15 | Minor TBI |\n| 9–13 | Moderate TBI |\n| ≤8 | Severe TBI — intubation indicated |\n| 3 | No function; brain death evaluation warranted |\n\n### Red Flags\n- GCS ≤8: Airway protection lost; immediate RSI intubation required\n- GCS drop ≥2 points: Urgent repeat CT head; suspect herniation\n- Asymmetric pupils + GCS decline: Uncal herniation until proven otherwise\n- Decorticate → Decerebrate posturing: Brainstem compromise"
+  },
+  {
+    "id": "chunk_2",
+    "domain": "Neurology",
+    "content_type": "diagnostic_criteria",
+    "severity_context": "acute",
+    "keywords": [
+      "Seizure",
+      "Epilepsy",
+      "Status Epilepticus",
+      "Focal Seizure",
+      "Generalized Tonic-Clonic",
+      "Postictal",
+      "EEG"
+    ],
+    "content": "## Seizure Classification & Management\n\n### ILAE 2017 Classification\n\n#### Focal Onset Seizures\n- **Aware**: Consciousness preserved (formerly 'simple partial')\n- **Impaired Awareness**: Consciousness altered (formerly 'complex partial')\n- **Focal to Bilateral Tonic-Clonic**: Spreads to both hemispheres\n\n#### Generalized Onset Seizures\n| Type | Features |\n|------|----------|\n| Tonic-Clonic | Stiffening (tonic) → rhythmic jerking (clonic), 1–3 min |\n| Absence | Brief (5–30 sec) behavioral arrest; 3 Hz spike-wave on EEG |\n| Myoclonic | Brief (<1 sec) muscle jerks |\n| Atonic | Sudden loss of muscle tone; drop attacks |\n| Tonic | Sustained muscle stiffening |\n| Clonic | Repetitive rhythmic jerking |\n\n### Status Epilepticus Definition\nContinuous seizure activity ≥5 minutes OR ≥2 discrete seizures without recovery of consciousness.\n\n### Treatment Protocol\n| Time | Intervention |\n|------|-------------|\n| 0–5 min | Benzodiazepine: Lorazepam 0.1 mg/kg IV (max 4 mg) |\n| 5–20 min | Second-line: Levetiracetam 60 mg/kg IV, Valproate 40 mg/kg IV, or Fosphenytoin 20 PE/kg IV |\n| 20–40 min | Refractory: Intubation + Midazolam infusion or Propofol |\n| >40 min | Super-refractory: Ketamine, Pentobarbital coma |\n\n### Red Flags\n- First seizure in adult >60 years: Structural/vascular cause until proven otherwise\n- New focal seizure with fever: Meningoencephalitis or abscess\n- Seizure + papilledema: Mass lesion with raised ICP\n- Status epilepticus >30 min: Risk of permanent neuronal injury"
+  },
+  {
+    "id": "chunk_3",
+    "domain": "Pulmonology",
+    "content_type": "diagnostic_criteria",
+    "severity_context": "acute",
+    "keywords": [
+      "Asthma",
+      "GINA Guidelines",
+      "Bronchospasm",
+      "FEV1",
+      "Peak Flow",
+      "Spirometry",
+      "Inhaled Corticosteroids"
+    ],
+    "content": "## Asthma: GINA Guidelines Classification & Management\n\n### Definition\nChronic heterogeneous airway disease characterized by airway hyperresponsiveness, reversible airflow obstruction, and type 2 eosinophilic inflammation.\n\n### Severity Classification (GINA 2023)\n| Parameter | Mild Intermittent | Mild Persistent | Moderate Persistent | Severe Persistent |\n|-----------|------------------|-----------------|---------------------|-------------------|\n| Daytime symptoms | <2/week | >2/week, not daily | Daily | Continuous |\n| Nighttime | ≤2/month | >2/month | >1/week | Frequent |\n| FEV1 (% predicted) | ≥80% | ≥80% | 60–80% | <60% |\n| SABA use | <2 days/week | >2 days/week | Daily | Several/day |\n| GINA Step | Step 1 | Step 2 | Step 3–4 | Step 5 |\n\n### GINA Step Therapy\n| Step | Preferred Controller | Reliever |\n|------|---------------------|----------|\n| 1 | Low-dose ICS-formoterol PRN | ICS-formoterol |\n| 2 | Low-dose ICS daily | SABA PRN |\n| 3 | Low-dose ICS-LABA | SABA PRN |\n| 4 | Medium-dose ICS-LABA | SABA PRN |\n| 5 | High-dose ICS-LABA + biologics (anti-IL-5, anti-IL-4R) | SABA PRN |\n\n### Acute Exacerbation: Severity Assessment\n| Feature | Mild-Moderate | Severe | Life-Threatening |\n|---------|---------------|--------|------------------|\n| SpO2 | ≥92% | 90–92% | <90% |\n| Speech | Sentences | Phrases | Words only |\n| PEFR | 50–70% predicted | <50% predicted | <33% predicted |\n| RR | <25/min | ≥25/min | Bradypnea |\n| Accessory muscles | No | Yes | Paradoxical movement |\n\n### Red Flags (Life-Threatening Asthma)\n- Silent chest (absent wheeze despite distress): Near-fatal asthma\n- Bradycardia + hypotension: Cardiovascular compromise\n- Altered consciousness: Hypercapnic respiratory failure\n- PEFR <33% predicted: Near-fatal threshold\n- PaCO2 >45 mmHg: Ventilatory failure"
+  },
+  {
+    "id": "chunk_4",
+    "domain": "Pulmonology",
+    "content_type": "diagnostic_criteria",
+    "severity_context": "chronic",
+    "keywords": [
+      "COPD",
+      "GOLD Criteria",
+      "Emphysema",
+      "Chronic Bronchitis",
+      "FEV1/FVC",
+      "Spirometry",
+      "LAMA"
+    ],
+    "content": "## COPD: GOLD Criteria & Management\n\n### Definition\nProgressive airflow limitation due to abnormal airway/alveolar response to noxious particles. Post-bronchodilator FEV1/FVC <0.70 confirms obstruction.\n\n### GOLD Airflow Limitation Grades\n| GOLD Grade | FEV1 (% predicted) | Severity |\n|------------|-------------------|----------|\n| GOLD 1 | ≥80% | Mild |\n| GOLD 2 | 50–79% | Moderate |\n| GOLD 3 | 30–49% | Severe |\n| GOLD 4 | <30% | Very Severe |\n\n### ABCD Assessment Tool (Symptoms + Exacerbations)\n| Group | mMRC/CAT | Exacerbations/year |\n|-------|----------|-------------------|\n| A | mMRC 0–1 / CAT <10 | 0–1 (no hospitalization) |\n| B | mMRC ≥2 / CAT ≥10 | 0–1 (no hospitalization) |\n| E | Any | ≥2 or ≥1 hospitalization |\n\n### Pharmacological Management\n| Group | Initial Therapy |\n|-------|----------------|\n| A | SAMA or SABA |\n| B | LAMA or LABA |\n| E | LAMA + LABA (add ICS if eos ≥300 cells/μL) |\n\n### Acute Exacerbation Treatment\n- SABA + SAMA nebulization\n- Prednisolone 30–40 mg PO ×5 days\n- Antibiotics: Amoxicillin/Azithromycin (purulent sputum or CRP >10 mg/L)\n- Controlled O2: Target SpO2 88–92%\n- NIV (BiPAP) if pH <7.35 and PaCO2 >45 mmHg\n\n### Red Flags\n- pH <7.25: High NIV failure risk; prepare for intubation\n- New RV failure (JVP↑, ankle edema, RV strain on ECG): Cor pulmonale\n- PaCO2 >80 mmHg: Hypercapnic narcosis\n- SpO2 <85% on 60% FiO2: Concurrent pneumonia or PE"
+  },
+  {
+    "id": "chunk_5",
+    "domain": "Pulmonology",
+    "content_type": "diagnostic_criteria",
+    "severity_context": "acute",
+    "keywords": [
+      "Pneumonia",
+      "CURB-65",
+      "Community-Acquired Pneumonia",
+      "CAP",
+      "Sepsis",
+      "Antibiotic Therapy"
+    ],
+    "content": "## Community-Acquired Pneumonia: CURB-65 Severity Score\n\n### Definition\nAcute lower respiratory tract infection with new radiological infiltrate in a non-hospitalized patient or within 48h of admission.\n\n### CURB-65 Scoring\n| Parameter | Criterion | Score |\n|-----------|-----------|-------|\n| **C** - Confusion | New disorientation (person, place, time) | 1 |\n| **U** - Urea | BUN >19 mg/dL (>7 mmol/L) | 1 |\n| **R** - Respiratory Rate | ≥30 breaths/min | 1 |\n| **B** - Blood Pressure | Systolic <90 mmHg OR Diastolic ≤60 mmHg | 1 |\n| **65** - Age | ≥65 years | 1 |\n\n### Risk Stratification & Disposition\n| CURB-65 | 30-day Mortality | Management |\n|---------|-----------------|------------|\n| 0–1 | <3% | Outpatient PO antibiotics |\n| 2 | ~9% | Consider hospitalization |\n| 3–4 | ~15–22% | Inpatient IV antibiotics |\n| 5 | ~57% | ICU, assess for mechanical ventilation |\n\n### Empirical Antibiotic Regimens\n| Setting | Regimen |\n|---------|--------|\n| Outpatient, no comorbidities | Amoxicillin 500 mg TID ×5 days |\n| Outpatient, comorbidities | Amoxicillin-clavulanate + Azithromycin |\n| Hospitalized, non-ICU | Beta-lactam + Macrolide OR Respiratory Fluoroquinolone |\n| ICU | Beta-lactam + Azithromycin + Antipseudomonal (if risk factors) |\n\n### Red Flags (ICU Admission Criteria — ATS/IDSA Minor)\n- RR ≥30/min\n- PaO2/FiO2 ratio ≤250\n- Multilobar infiltrates\n- Confusion/disorientation\n- BUN ≥20 mg/dL\n- WBC <4,000 cells/μL\n- Platelet <100,000/μL\n- Temperature <36°C\n- Hypotension requiring aggressive fluid resuscitation\n(≥3 minor criteria = ICU admission)"
+  },
+  {
+    "id": "chunk_6",
+    "domain": "Emergency Medicine",
+    "content_type": "treatment_protocol",
+    "severity_context": "emergency",
+    "keywords": [
+      "Anaphylaxis",
+      "Epinephrine",
+      "IgE",
+      "Mast Cell",
+      "Anaphylactic Shock",
+      "Urticaria",
+      "Bronchospasm"
+    ],
+    "content": "## Anaphylaxis: Recognition & Emergency Treatment Protocol\n\n### Definition\nSevere, systemic hypersensitivity reaction; typically IgE-mediated mast cell/basophil degranulation causing multisystem involvement. Onset: seconds to minutes.\n\n### Diagnostic Criteria (WAO 2020)\nAnaphylaxis is highly likely when ANY ONE of the following criteria is met:\n\n**Criterion 1:** Acute illness with skin/mucosal involvement + at least one of:\n- Respiratory compromise\n- Hypotension or end-organ dysfunction\n\n**Criterion 2:** Two or more of the following after allergen exposure:\n- Skin/mucosal involvement\n- Respiratory compromise\n- Hypotension\n- Persistent GI symptoms\n\n**Criterion 3:** Hypotension alone after known allergen exposure\n- Adults: SBP <90 mmHg or >30% decrease from baseline\n\n### Treatment Protocol (Time-Critical)\n| Priority | Intervention | Dose |\n|----------|-------------|------|\n| **1st** | Epinephrine IM | 0.3–0.5 mg IM (lateral thigh); 0.01 mg/kg in children (max 0.5 mg) |\n| **2nd** | Supine position | Legs elevated unless respiratory compromise |\n| **3rd** | O2 supplementation | High-flow 10–15 L/min via non-rebreather |\n| **4th** | IV access + NS bolus | 1–2 L IV (adults); 20 mL/kg IV (children) |\n| **5th** | H1 antihistamine | Diphenhydramine 25–50 mg IV |\n| **6th** | Corticosteroid | Methylprednisolone 125 mg IV (does NOT replace epinephrine) |\n| **7th** | H2 blocker | Ranitidine 50 mg IV (adjunct) |\n\n### Epinephrine Repeat Dosing\nRepeat IM epinephrine every 5–15 minutes if no improvement. IV epinephrine infusion (1–4 mcg/min) for refractory shock.\n\n### Red Flags\n- Delayed epinephrine administration: Single most preventable cause of anaphylaxis death\n- Biphasic reaction: 1–72h after initial resolution; observe ≥4h minimum post-reaction\n- Beta-blocker use: Epinephrine resistance; use glucagon 1–5 mg IV\n- Tryptase >11.4 μg/L at 1–2h: Confirms mast cell activation"
+  },
+  {
+    "id": "chunk_7",
+    "domain": "Emergency Medicine",
+    "content_type": "diagnostic_criteria",
+    "severity_context": "emergency",
+    "keywords": [
+      "Sepsis",
+      "qSOFA",
+      "SOFA Score",
+      "Organ Dysfunction",
+      "Septic Shock",
+      "Lactate",
+      "Bacteremia"
+    ],
+    "content": "## Sepsis: qSOFA Criteria & Surviving Sepsis Campaign\n\n### Definitions (Sepsis-3, 2016)\n- **Sepsis**: Life-threatening organ dysfunction caused by dysregulated host response to infection. SOFA score ≥2 points above baseline.\n- **Septic Shock**: Sepsis + vasopressor requirement to maintain MAP ≥65 mmHg + serum lactate >2 mmol/L despite adequate fluid resuscitation. In-hospital mortality >40%.\n\n### qSOFA (Quick SOFA) — Bedside Screen\n| Criterion | Score |\n|-----------|-------|\n| Respiratory Rate ≥22/min | 1 |\n| Altered Mental Status (GCS <15) | 1 |\n| Systolic BP ≤100 mmHg | 1 |\n\nqSOFA ≥2: High risk of poor outcome; initiate full SOFA assessment and sepsis workup.\n\n### SOFA Score (Full)\n| System | 0 | 1 | 2 | 3 | 4 |\n|--------|---|---|---|---|---|\n| Respiration (PaO2/FiO2) | ≥400 | 300–399 | 200–299 | 100–199 on ventilation | <100 on ventilation |\n| Coagulation (Platelets ×10³/μL) | ≥150 | 100–149 | 50–99 | 20–49 | <20 |\n| Liver (Bilirubin mg/dL) | <1.2 | 1.2–1.9 | 2.0–5.9 | 6.0–11.9 | >12.0 |\n| Cardiovascular (MAP/Vasopressors) | MAP ≥70 | MAP <70 | Dopamine <5 | Dopamine 5–15 | Dopamine >15 |\n| CNS (GCS) | 15 | 13–14 | 10–12 | 6–9 | <6 |\n| Renal (Creatinine mg/dL) | <1.2 | 1.2–1.9 | 2.0–3.4 | 3.5–4.9 | >5.0 |\n\n### Hour-1 Bundle (SSC 2018)\n1. Measure lactate; repeat if >2 mmol/L\n2. Blood cultures ×2 before antibiotics\n3. Broad-spectrum antibiotics within 1 hour\n4. 30 mL/kg IV crystalloid for hypotension or lactate ≥4 mmol/L\n5. Vasopressors (Norepinephrine 1st line) if MAP <65 mmHg\n\n### Red Flags\n- Lactate ≥4 mmol/L: Tissue hypoperfusion; associated with >28% mortality\n- Fluid-refractory shock: Escalate vasopressors; add vasopressin 0.03 units/min\n- New AKI + thrombocytopenia + elevated bilirubin: MODS (Multi-Organ Dysfunction Syndrome)"
+  },
+  {
+    "id": "chunk_8",
+    "domain": "Emergency Medicine",
+    "content_type": "treatment_protocol",
+    "severity_context": "emergency",
+    "keywords": [
+      "STEMI",
+      "NSTEMI",
+      "Myocardial Infarction",
+      "Troponin",
+      "PCI",
+      "Thrombolysis",
+      "ECG"
+    ],
+    "content": "## Myocardial Infarction: STEMI vs NSTEMI Protocols\n\n### Classification\n| Type | ECG Finding | Mechanism | Priority |\n|------|-------------|-----------|----------|\n| **STEMI** | ST-elevation ≥1 mm (≥2 mm V1–V2) in ≥2 contiguous leads | Complete coronary occlusion | Emergent PCI |\n| **NSTEMI** | ST-depression, T-wave inversion, or normal ECG + elevated troponin | Partial occlusion / plaque erosion | Urgent PCI (within 24h) |\n| **Unstable Angina** | Dynamic ECG changes, no troponin rise | Plaque disruption, no necrosis | Early invasive strategy |\n\n### STEMI Reperfusion Strategy\n| Setting | Target Time | Strategy |\n|---------|-------------|----------|\n| PCI-capable center | Door-to-balloon ≤90 min | Primary PCI |\n| Non-PCI center | FMC-to-device ≤120 min | Transfer for PCI |\n| PCI not achievable ≤120 min | Door-to-needle ≤30 min | Fibrinolysis (tPA/Tenecteplase) |\n\n### STEMI MONA Protocol (Initial)\n- **M**: Morphine 2–4 mg IV for refractory pain (use cautiously)\n- **O**: Oxygen only if SpO2 <90%\n- **N**: Nitroglycerin SL 0.4 mg q5min ×3 (contraindicated if SBP <90 mmHg, RV infarct, PDE5 inhibitor use within 24h)\n- **A**: Aspirin 300 mg PO loading dose\n\n### Dual Antiplatelet Therapy (DAPT)\n- Aspirin 75–100 mg + Ticagrelor 180 mg loading OR Clopidogrel 600 mg loading\n- Duration: 12 months minimum post-PCI stenting\n\n### NSTEMI Risk Stratification (GRACE Score)\n| Risk Category | GRACE Score | 6-Month Mortality | PCI Timing |\n|---------------|-------------|-------------------|------------|\n| Low | <109 | <3% | Elective (>72h) |\n| Intermediate | 109–140 | 3–8% | Early (<24h) |\n| High | >140 | >8% | Immediate (<2h) |\n\n### Red Flags\n- New LBBB + chest pain: Treat as STEMI equivalent\n- SBP <90 mmHg + STEMI: Cardiogenic shock; IABP/Impella support\n- Posterior MI (ST depression V1–V4): Obtain posterior leads V7–V9\n- RV infarct (ST elevation in V4R): Avoid nitrates and diuretics"
+  },
+  {
+    "id": "chunk_9",
+    "domain": "Pharmacology",
+    "content_type": "pathophysiology",
+    "severity_context": "chronic",
+    "keywords": [
+      "Statins",
+      "HMG-CoA Reductase",
+      "Myopathy",
+      "Rhabdomyolysis",
+      "LDL",
+      "Hepatotoxicity",
+      "CK"
+    ],
+    "content": "## Statins: Mechanism, Contraindications & Toxicity\n\n### Mechanism of Action\nStatins competitively inhibit HMG-CoA reductase, the rate-limiting enzyme in the mevalonate pathway for cholesterol biosynthesis in hepatocytes. This reduces intracellular cholesterol → upregulates hepatic LDL receptors → increased LDL clearance from plasma.\n\n### Drug Class Overview\n| Statin | Lipophilicity | LDL Reduction | CYP Metabolism |\n|--------|--------------|---------------|----------------|\n| Atorvastatin | Lipophilic | 37–51% | CYP3A4 |\n| Rosuvastatin | Hydrophilic | 45–63% | CYP2C9 (minor) |\n| Simvastatin | Lipophilic | 28–41% | CYP3A4 |\n| Pravastatin | Hydrophilic | 23–34% | Non-CYP |\n| Fluvastatin | Lipophilic | 22–36% | CYP2C9 |\n\n### Pleiotropic Effects (Beyond LDL Lowering)\n- Anti-inflammatory: Reduces CRP and IL-6\n- Endothelial: Improves nitric oxide bioavailability\n- Plaque stabilization: Reduces lipid core volume\n\n### Contraindications\n- Active hepatic disease or unexplained persistent transaminase elevation (>3× ULN)\n- Pregnancy and lactation (Category X)\n- Concomitant strong CYP3A4 inhibitors with Simvastatin/Lovastatin (azole antifungals, protease inhibitors, macrolides)\n\n### Toxicity Profile\n| Adverse Effect | Incidence | Mechanism | Management |\n|---------------|-----------|-----------|------------|\n| Myalgia (CK normal) | 5–10% | Mitochondrial dysfunction | Reduce dose or switch |\n| Myopathy (CK >10× ULN) | 0.1% | Impaired CoQ10/mevalonate | Discontinue immediately |\n| Rhabdomyolysis (CK >10,000 IU/L) | <0.01% | Myocyte necrosis → myoglobinuria | Discontinue; aggressive IV hydration |\n| Hepatotoxicity (transaminases >3× ULN) | <1% | Direct hepatocellular injury | Discontinue |\n| New-onset Diabetes | ~10% relative risk increase | Reduced insulin sensitivity | Risk-benefit assessment |\n\n### Red Flags\n- CK >10,000 IU/L + dark urine: Rhabdomyolysis; risk of acute tubular necrosis\n- Transaminases >3× ULN on two occasions: Discontinue statin\n- Simvastatin >40 mg + Amlodipine: FDA warning; myopathy risk\n- Simvastatin + Gemfibrozil: Contraindicated combination"
+  },
+  {
+    "id": "chunk_10",
+    "domain": "Pharmacology",
+    "content_type": "pathophysiology",
+    "severity_context": "chronic",
+    "keywords": [
+      "Anticoagulants",
+      "Warfarin",
+      "DOACs",
+      "INR",
+      "Bleeding Risk",
+      "Heparin",
+      "Reversal Agents"
+    ],
+    "content": "## Anticoagulants: Mechanism, Monitoring & Reversal\n\n### Drug Class Comparison\n| Agent | Target | Monitoring | Reversal Agent |\n|-------|--------|------------|----------------|\n| Warfarin | Vitamin K-dependent factors (II, VII, IX, X, Protein C/S) | PT/INR | Vitamin K, 4-Factor PCC, FFP |\n| Unfractionated Heparin (UFH) | Antithrombin → inhibits IIa + Xa | aPTT (1.5–2.5× normal) | Protamine sulfate |\n| Low Molecular Weight Heparin (LMWH) | Antithrombin → inhibits Xa | Anti-Xa level (if required) | Protamine (60% effective) |\n| Dabigatran | Direct thrombin inhibitor (Factor IIa) | Thrombin time | Idarucizumab (Praxbind) |\n| Rivaroxaban/Apixaban | Direct Factor Xa inhibitor | Anti-Xa (if required) | Andexanet alfa |\n\n### Warfarin INR Therapeutic Ranges\n| Indication | Target INR |\n|------------|------------|\n| DVT/PE treatment | 2.0–3.0 |\n| AF (non-valvular) | 2.0–3.0 |\n| Mechanical aortic valve | 2.0–3.0 |\n| Mechanical mitral valve | 2.5–3.5 |\n| Recurrent VTE | 2.0–3.0 |\n\n### Warfarin Drug Interactions (CYP2C9/VKORC1)\n- **Potentiators** (increase INR): Amiodarone, Fluconazole, Metronidazole, NSAIDs, Ciprofloxacin\n- **Inhibitors** (decrease INR): Rifampicin, Carbamazepine, St. John's Wort, Vitamin K-rich foods\n\n### Reversal Protocols\n| Scenario | Action |\n|----------|--------|\n| INR 4–9, no bleeding | Hold warfarin 1–2 doses; monitor |\n| INR >9, no bleeding | Vitamin K 2.5–5 mg PO |\n| Life-threatening bleed | 4-Factor PCC 25–50 IU/kg IV + Vitamin K 10 mg IV |\n| Dabigatran major bleed | Idarucizumab 5 g IV |\n| Rivaroxaban/Apixaban major bleed | Andexanet alfa (weight/dose-based bolus + infusion) |\n\n### Red Flags\n- INR >10: High intracranial hemorrhage risk; urgent reversal\n- Heparin-Induced Thrombocytopenia (HIT): Platelets ↓>50% + thrombosis on heparin; stop all heparin immediately; use Argatroban or Danaparoid\n- Warfarin in first trimester: Warfarin embryopathy (nasal hypoplasia, stippled epiphyses)"
+  },
+  {
+    "id": "chunk_11",
+    "domain": "Pharmacology",
+    "content_type": "pathophysiology",
+    "severity_context": "acute",
+    "keywords": [
+      "Antibiotics",
+      "Beta-Lactam",
+      "Aminoglycoside",
+      "Resistance",
+      "C. difficile",
+      "Nephrotoxicity",
+      "Ototoxicity"
+    ],
+    "content": "## Antibiotics: Mechanism, Spectrum & Toxicity\n\n### Major Class Summary\n| Class | Mechanism | Spectrum | Key Toxicity |\n|-------|-----------|----------|-------------|\n| Penicillins | Cell wall synthesis inhibition (PBP binding) | Gram+, some Gram- | Hypersensitivity, C. difficile |\n| Cephalosporins (Gen 1–5) | Cell wall synthesis inhibition | Broad (generation-dependent) | Hypersensitivity (cross-reactive ~1–2%) |\n| Carbapenems | Broad-spectrum beta-lactam | Gram+, Gram-, anaerobes | Seizures (Imipenem), C. difficile |\n| Aminoglycosides | 30S ribosomal inhibition (bactericidal) | Gram- (incl. Pseudomonas) | Nephrotoxicity, Ototoxicity |\n| Fluoroquinolones | DNA gyrase/topoisomerase IV inhibition | Gram-, atypicals | QTc prolongation, tendinopathy, C. difficile |\n| Vancomycin | Cell wall synthesis (glycopeptide) | MRSA, Gram+ | Red Man Syndrome, nephrotoxicity |\n| Macrolides | 50S ribosomal inhibition (bacteriostatic) | Atypicals, Gram+ | QTc prolongation, hepatotoxicity |\n| Metronidazole | DNA strand breakage | Anaerobes, protozoa | Peripheral neuropathy, disulfiram reaction |\n| Linezolid | 50S ribosomal inhibition | MRSA, VRE | Myelosuppression, serotonin syndrome |\n\n### Beta-Lactam Allergy Cross-Reactivity\n- Penicillin IgE-mediated allergy → cephalosporin cross-reactivity ~1–2% (lower than historically reported 10%)\n- Carbapenems: <1% cross-reactivity with true penicillin allergy\n- Same R1 side chain = higher cross-reactivity risk\n\n### Aminoglycoside Monitoring\n| Parameter | Conventional Dosing | Extended-Interval Dosing |\n|-----------|--------------------|--------------------------|\n| Dosing frequency | Q8h | Q24h |\n| Trough target (Gentamicin) | <2 mg/L | Undetectable at 18–24h |\n| Peak target | 5–10 mg/L (Gram-) | N/A |\n| Renal monitoring | Creatinine Q48h | Creatinine Q48h |\n\n### Red Flags\n- Aminoglycosides + loop diuretics: Synergistic ototoxicity; audiometry if prolonged use\n- Vancomycin trough >20 mg/L: Nephrotoxicity risk; target AUC/MIC 400–600 per ASHP 2020 guidelines\n- Fluoroquinolones in myasthenia gravis: May precipitate respiratory crisis\n- Clindamycin/Cephalosporins with prolonged use: C. difficile colitis; test with stool PCR"
+  },
+  {
+    "id": "chunk_12",
+    "domain": "Pediatrics",
+    "content_type": "diagnostic_criteria",
+    "severity_context": "normal",
+    "keywords": [
+      "Growth Milestones",
+      "Developmental Milestones",
+      "Gross Motor",
+      "Fine Motor",
+      "Language",
+      "Social",
+      "Denver II"
+    ],
+    "content": "## Pediatric Developmental Milestones (Age-Specific)\n\n### Gross Motor Milestones\n| Age | Expected Milestone |\n|-----|-------------------|\n| 2 months | Lifts head 45° in prone position |\n| 4 months | Head control; rolls prone to supine |\n| 6 months | Sits with support; bears weight on legs |\n| 9 months | Sits without support; crawls |\n| 12 months | Pulls to stand; cruises furniture; may take first steps |\n| 15 months | Walks independently |\n| 18 months | Runs stiffly; climbs stairs with help |\n| 24 months | Runs well; walks up/down stairs (two feet per step) |\n| 36 months | Climbs stairs alternating feet; rides tricycle |\n\n### Fine Motor Milestones\n| Age | Expected Milestone |\n|-----|-------------------|\n| 2 months | Hands open, tracks past midline |\n| 4 months | Reaches for objects, bilateral grasp |\n| 6 months | Transfers objects hand to hand |\n| 9 months | Pincer grasp (inferior) |\n| 12 months | Mature pincer grasp |\n| 18 months | Stacks 3 blocks; scribbles spontaneously |\n| 24 months | Stacks 6 blocks; copies circle |\n| 36 months | Copies circle; uses scissors |\n\n### Language Milestones\n| Age | Expressive | Receptive |\n|-----|------------|----------|\n| 2 months | Cooing | Startles to sound |\n| 6 months | Babbles (consonants) | Responds to name |\n| 12 months | 1–3 words (mama, dada specific) | Follows 1-step commands |\n| 18 months | 10–25 words | Points to body parts |\n| 24 months | 2-word phrases; 50+ words | Follows 2-step commands |\n| 36 months | 3-word sentences; 75% intelligibility | Follows 3-step commands |\n\n### Social/Emotional Milestones\n| Age | Milestone |\n|-----|-----------|\n| 2 months | Social smile |\n| 6 months | Stranger anxiety begins |\n| 9 months | Separation anxiety peak; object permanence |\n| 18 months | Parallel play |\n| 36 months | Cooperative play; takes turns |\n\n### Red Flags (Developmental Regression)\n- Loss of ANY previously acquired skill: Urgent developmental and neurological evaluation\n- No babbling by 12 months: Audiology + speech-language referral\n- No words by 16 months: Autism spectrum disorder screening (M-CHAT-R)\n- No 2-word phrases by 24 months: Comprehensive developmental evaluation\n- Persistent toe-walking >2 years: Assess for autism, cerebral palsy, muscular dystrophy"
+  },
+  {
+    "id": "chunk_13",
+    "domain": "Pediatrics",
+    "content_type": "emergency_triage",
+    "severity_context": "emergency",
+    "keywords": [
+      "Neonate",
+      "Neonatal Emergencies",
+      "Apgar Score",
+      "Neonatal Resuscitation",
+      "Hypoglycemia",
+      "Respiratory Distress",
+      "APGAR"
+    ],
+    "content": "## Neonatal Emergency Vitals & Resuscitation\n\n### Normal Neonatal Vital Signs\n| Parameter | Term Neonate (0–28 days) | Preterm (<37 weeks) |\n|-----------|-------------------------|--------------------|\n| Heart Rate | 120–160 bpm | 120–170 bpm |\n| Respiratory Rate | 40–60 breaths/min | 40–60 breaths/min |\n| Systolic BP | 60–80 mmHg | 45–60 mmHg |\n| Temperature (axillary) | 36.5–37.5°C | 36.5–37.5°C |\n| SpO2 (1–10 min post-birth) | 85–95% (transitional) | — |\n| SpO2 (>10 min post-birth) | ≥95% | ≥95% |\n| Blood Glucose | ≥2.6 mmol/L (≥47 mg/dL) | ≥2.6 mmol/L |\n\n### APGAR Score (Assessed at 1 and 5 minutes)\n| Sign | 0 | 1 | 2 |\n|------|---|---|---|\n| **A**ppearance | Blue/pale all over | Body pink, extremities blue | Completely pink |\n| **P**ulse | Absent | <100 bpm | ≥100 bpm |\n| **G**rimace | No response | Grimace | Cry or cough |\n| **A**ctivity | Limp | Some flexion | Active motion |\n| **R**espiration | Absent | Weak/irregular | Strong cry |\n\n| Score | Interpretation |\n|-------|----------------|\n| 7–10 | Normal |\n| 4–6 | Moderate depression; stimulation + O2 |\n| 0–3 | Severe depression; immediate resuscitation |\n\n### NRP Algorithm (Neonatal Resuscitation Program)\n1. Warm, dry, stimulate → assess breathing + HR\n2. If RR inadequate or HR <100 bpm: PPV at 40–60/min (21% O2 for term; 21–30% for preterm)\n3. If HR <60 bpm after 30 sec PPV: Chest compressions (3:1 ratio with PPV); increase FiO2 to 100%\n4. If HR <60 bpm after compressions: Epinephrine 0.01–0.03 mg/kg IV (umbilical vein)\n5. Consider: Volume expansion (NS 10 mL/kg) if hypovolemia suspected\n\n### Critical Neonatal Emergencies\n| Condition | Key Finding | Immediate Action |\n|-----------|-------------|------------------|\n| Congenital diaphragmatic hernia | Scaphoid abdomen, bowel sounds in chest | Intubate; avoid BMV |\n| Tension pneumothorax | Sudden deterioration, shifted heart sounds | Needle decompression |\n| Hypoglycemia (<47 mg/dL) | Jitteriness, apnea, seizures | 10% Dextrose 2 mL/kg IV bolus |\n| Transposition of Great Arteries | Profound cyanosis, SpO2 unresponsive to O2 | Prostaglandin E1 (PGE1) infusion |\n\n### Red Flags\n- APGAR 0–3 at 5 minutes: High risk of hypoxic-ischemic encephalopathy; initiate therapeutic hypothermia if eligible\n- Persistent cyanosis unresponsive to 100% O2: Structural cardiac defect; urgent echocardiography\n- Abdominal distension + bilious vomiting in neonate: Malrotation with volvulus until proven otherwise\n- Temperature <36°C on admission: Hypothermia worsens hypoglycemia, acidosis, coagulopathy"
+  },
+  {
+    "id": "chunk_14",
+    "domain": "Cardiology",
+    "content_type": "pathophysiology",
+    "severity_context": "chronic",
+    "keywords": [
+      "Heart Failure",
+      "EF",
+      "BNP",
+      "NYHA Classification",
+      "Cardiomegaly",
+      "Fluid Overload",
+      "ACE Inhibitors"
+    ],
+    "content": "## Heart Failure: Classification, Pathophysiology & Management\n\n### Definition\nHeart failure (HF): Clinical syndrome of inadequate cardiac output relative to metabolic demands, OR adequate output only at elevated filling pressures. Classified by ejection fraction:\n\n| Type | EF | Mechanism |\n|------|----|-----------|\n| HFrEF (HF with reduced EF) | <40% | Systolic dysfunction |\n| HFmrEF (mildly reduced EF) | 40–49% | Mixed |\n| HFpEF (preserved EF) | ≥50% | Diastolic dysfunction |\n\n### NYHA Functional Classification\n| Class | Symptoms |\n|-------|----------|\n| I | No limitation; ordinary activity asymptomatic |\n| II | Slight limitation; comfortable at rest, symptoms with moderate exertion |\n| III | Marked limitation; comfortable at rest, symptoms with minimal exertion |\n| IV | Symptoms at rest; unable to carry out any activity |\n\n### Biomarkers\n| Marker | Threshold | Interpretation |\n|--------|-----------|----------------|\n| BNP | ≥100 pg/mL | High sensitivity for HF |\n| NT-proBNP | ≥300 pg/mL (acute); ≥125 pg/mL (chronic) | More stable; longer half-life |\n| BNP <35 pg/mL | Rule-out HF | High negative predictive value |\n\n### Evidence-Based Pharmacotherapy (HFrEF)\n| Drug Class | Example | Mortality Benefit |\n|------------|---------|-------------------|\n| ACE Inhibitor / ARB | Ramipril, Valsartan | 16–27% RRR (SOLVD, CHARM) |\n| Beta-Blocker | Carvedilol, Bisoprolol | 34% RRR (MERIT-HF, COPERNICUS) |\n| MRA | Spironolactone, Eplerenone | 30% RRR (RALES, EMPHASIS-HF) |\n| SGLT2 Inhibitor | Dapagliflozin, Empagliflozin | 25% RRR (DAPA-HF, EMPEROR) |\n| ARNI | Sacubitril/Valsartan | 20% RRR over ACEi (PARADIGM-HF) |\n\n### Red Flags (Acute Decompensated Heart Failure)\n- SpO2 <90% on room air: High-flow O2/NIV; consider intubation\n- SBP <90 mmHg + signs of hypoperfusion: Cardiogenic shock; inotropes + mechanical support\n- BNP >1000 pg/mL with minimal diuresis: IV loop diuretic dose escalation or renal replacement\n- Hyponatremia <130 mEq/L in HF: Severe; associated with poor prognosis"
+  },
+  {
+    "id": "chunk_15",
+    "domain": "Cardiology",
+    "content_type": "diagnostic_criteria",
+    "severity_context": "emergency",
+    "keywords": [
+      "Atrial Fibrillation",
+      "Rate Control",
+      "Rhythm Control",
+      "Anticoagulation",
+      "CHA2DS2-VASc",
+      "Cardioversion",
+      "HAS-BLED"
+    ],
+    "content": "## Atrial Fibrillation: Management Framework\n\n### Definition\nAF: Supraventricular tachyarrhythmia with uncoordinated atrial electrical activity; absent P waves + irregularly irregular RR intervals on ECG. Most common sustained cardiac arrhythmia.\n\n### Classification\n| Type | Duration |\n|------|----------|\n| First detected | Single episode, regardless of duration |\n| Paroxysmal | Terminates spontaneously or with intervention <7 days |\n| Persistent | >7 days; requires intervention to terminate |\n| Long-standing persistent | ≥1 year; rhythm control still pursued |\n| Permanent | Accepted ongoing AF; rhythm control abandoned |\n\n### Stroke Risk: CHA₂DS₂-VASc Score\n| Factor | Score |\n|--------|-------|\n| CHF or LVEF <40% | 1 |\n| Hypertension | 1 |\n| Age ≥75 years | 2 |\n| Diabetes mellitus | 1 |\n| Stroke/TIA history | 2 |\n| Vascular disease (MI, PAD, aortic plaque) | 1 |\n| Age 65–74 years | 1 |\n| Sex category (female) | 1 |\n\n| Score | Annual Stroke Risk | Anticoagulation |\n|-------|------------------|-----------------|\n| 0 (male), 1 (female) | Low (<1%) | No anticoagulation |\n| 1 (male) | Intermediate | Consider anticoagulation |\n| ≥2 | High | Anticoagulate (DOAC preferred over warfarin) |\n\n### Rate Control Targets\n- Lenient: Resting HR <110 bpm (acceptable in most)\n- Strict: Resting HR <80 bpm (symptomatic patients)\n- Agents: Beta-blockers (1st line), Non-DHP CCBs (Diltiazem/Verapamil), Digoxin (adjunct)\n\n### Cardioversion Criteria\n- AF <48h duration: May cardiovert without TEE\n- AF ≥48h or unknown duration: Anticoagulate ≥3 weeks before cardioversion OR TEE to exclude LAA thrombus\n- Post-cardioversion: Anticoagulate ≥4 weeks regardless of CHA₂DS₂-VASc\n\n### Red Flags\n- AF with pre-excitation (WPW): Avoid AV nodal agents (adenosine, digoxin, verapamil); can precipitate VF\n- AF + hemodynamic instability: Urgent electrical cardioversion (synchronized DC)\n- Rapid ventricular response >150 bpm in HF: IV Amiodarone or Digoxin (avoid rate-limiting CCBs)"
+  },
+  {
+    "id": "chunk_16",
+    "domain": "Endocrinology",
+    "content_type": "diagnostic_criteria",
+    "severity_context": "emergency",
+    "keywords": [
+      "Diabetic Ketoacidosis",
+      "DKA",
+      "Ketosis",
+      "Hyperglycemia",
+      "Anion Gap",
+      "Insulin Therapy",
+      "Type 1 Diabetes"
+    ],
+    "content": "## Diabetic Ketoacidosis (DKA): Diagnostic Criteria & Management\n\n### Diagnostic Criteria (ADA)\n| Parameter | Mild DKA | Moderate DKA | Severe DKA |\n|-----------|----------|--------------|------------|\n| Blood Glucose | >250 mg/dL | >250 mg/dL | >250 mg/dL |\n| Arterial pH | 7.25–7.30 | 7.00–7.24 | <7.00 |\n| Serum Bicarbonate | 15–18 mEq/L | 10–14 mEq/L | <10 mEq/L |\n| Urine/Serum Ketones | Positive | Positive | Positive |\n| Anion Gap | >10 | >12 | >12 |\n| Mental Status | Alert | Alert/Drowsy | Stupor/Coma |\n\n### Anion Gap Calculation\nAnion Gap = Na⁺ − (Cl⁻ + HCO₃⁻); Normal: 8–12 mEq/L\n\n### Pathophysiology\nInsulin deficiency → counterregulatory hormones ↑ (glucagon, cortisol, catecholamines) → lipolysis → free fatty acids → hepatic ketogenesis (beta-hydroxybutyrate, acetoacetate) → metabolic acidosis + osmotic diuresis.\n\n### DKA Management Protocol\n\n#### Fluids\n- NS 1 L/h × 1–2h, then 250–500 mL/h based on hydration status\n- Switch to 0.45% NaCl when Na corrected; add dextrose when glucose <250 mg/dL\n\n#### Insulin\n- Regular insulin 0.1 units/kg IV bolus (optional), then 0.1 units/kg/h infusion\n- Reduce to 0.05 units/kg/h when glucose <250 mg/dL\n- Continue insulin infusion until anion gap closes AND pH >7.30\n\n#### Potassium Replacement\n| Serum K⁺ | Action |\n|----------|--------|\n| <3.3 mEq/L | Hold insulin; replace K⁺ at 40 mEq/h before starting insulin |\n| 3.3–5.0 mEq/L | Add 20–40 mEq K⁺ to each liter IV |\n| >5.0 mEq/L | Hold K⁺; check every 2h |\n\n#### Bicarbonate\nNot routinely recommended; consider if pH <6.9 (50 mEq NaHCO₃ in 200 mL NS over 2h)\n\n### Red Flags\n- Cerebral edema: Headache + altered consciousness during treatment (especially in pediatric DKA); CT head; Mannitol 0.5–1 g/kg IV\n- Persistent anion gap despite glucose normalization: Incomplete resolution; continue insulin drip\n- Hypokalemia after insulin initiation: Cardiac arrhythmia risk; continuous cardiac monitoring\n- Triglycerides >1000 mg/dL in DKA: Hypertriglyceridemia-induced pancreatitis as precipitant"
+  },
+  {
+    "id": "chunk_17",
+    "domain": "Endocrinology",
+    "content_type": "emergency_triage",
+    "severity_context": "emergency",
+    "keywords": [
+      "Hypoglycemia",
+      "Glucose",
+      "Glucagon",
+      "Insulin",
+      "Dextrose",
+      "Neuroglycopenia",
+      "Adrenergic Symptoms"
+    ],
+    "content": "## Hypoglycemia: Classification, Recognition & Treatment\n\n### Definition (ADA Glucose Thresholds)\n| Level | Blood Glucose | Clinical Significance |\n|-------|--------------|----------------------|\n| Level 1 | 54–70 mg/dL (3.0–3.9 mmol/L) | Alert value; treatment recommended |\n| Level 2 | <54 mg/dL (<3.0 mmol/L) | Clinically significant hypoglycemia |\n| Level 3 | Severe cognitive impairment, requires assistance | Any glucose level |\n\n### Symptom Categories\n#### Adrenergic (Sympathoadrenal — Early Warning)\n- Diaphoresis, palpitations, tremor, anxiety, pallor, tachycardia\n\n#### Neuroglycopenic (CNS glucose deprivation — Late/Severe)\n- Confusion, seizure, focal neurological deficits, coma, death\n\n### Treatment Protocol\n| Severity | Patient Status | Treatment |\n|----------|---------------|----------|\n| Mild-Moderate | Conscious + able to swallow | 15g fast-acting carbohydrates PO (4 glucose tablets, 150 mL juice) |\n| Moderate | Confused but responsive | Oral glucose gel (buccal) |\n| Severe | Unconscious / unable to swallow | Dextrose 50% (D50W) 25–50 mL IV bolus OR Glucagon 1 mg IM/SC |\n| IV access unavailable | Any | Glucagon 1 mg IM; Nasal Glucagon 3 mg (Baqsimi) |\n\n### Rule of 15\n15g carbohydrates → recheck glucose in 15 minutes → repeat if glucose still <70 mg/dL → once normalized, eat a meal or snack.\n\n### Common Causes\n| Category | Causes |\n|----------|--------|\n| Medication | Insulin, Sulfonylureas, Meglitinides |\n| Medical | Adrenal insufficiency, Hepatic failure, Insulinoma |\n| Factitious | Exogenous insulin/sulfonylurea |\n| Post-surgical | Gastric bypass (late dumping) |\n\n### Red Flags\n- Prolonged hypoglycemia despite treatment: Suspect Sulfonylurea overdose; admit for 24h glucose monitoring\n- Recurrent severe hypoglycemia unawareness: Hypoglycemia-associated autonomic failure (HAAF)\n- Hypoglycemia + hyponatremia + hyperkalemia: Addisonian crisis; cortisol replacement (Hydrocortisone 100 mg IV) immediately\n- Fasting glucose <50 mg/dL in non-diabetic: Insulinoma workup (C-peptide, proinsulin)"
+  },
+  {
+    "id": "chunk_18",
+    "domain": "Nephrology",
+    "content_type": "diagnostic_criteria",
+    "severity_context": "acute",
+    "keywords": [
+      "Acute Kidney Injury",
+      "AKI",
+      "Creatinine",
+      "KDIGO Criteria",
+      "Oliguria",
+      "Uremia",
+      "Dialysis"
+    ],
+    "content": "## Acute Kidney Injury (AKI): KDIGO Staging & Management\n\n### Definition (KDIGO 2012)\nAKI: Increase in serum creatinine (SCr) ≥0.3 mg/dL within 48h OR ≥1.5× baseline within 7 days OR urine output (UO) <0.5 mL/kg/h for ≥6h.\n\n### KDIGO Staging\n| Stage | Serum Creatinine | Urine Output |\n|-------|-----------------|-------------|\n| 1 | ≥0.3 mg/dL increase OR 1.5–1.9× baseline | <0.5 mL/kg/h for 6–12h |\n| 2 | 2.0–2.9× baseline | <0.5 mL/kg/h for ≥12h |\n| 3 | ≥3× baseline OR ≥4.0 mg/dL OR initiation of RRT | <0.3 mL/kg/h for ≥24h or anuria ≥12h |\n\n### Etiology Classification\n| Category | Cause | FENa |\n|----------|-------|------|\n| Pre-renal | Hypovolemia, cardiogenic, hepatorenal | <1% |\n| Intrinsic | ATN, glomerulonephritis, AIN, vasculitis | >2% |\n| Post-renal | BPH, calculi, malignancy (bilateral obstruction) | Variable |\n\n### FENa Formula\nFENa (%) = (Urine Na × Plasma Cr) / (Plasma Na × Urine Cr) × 100\nNote: FENa unreliable if diuretics given, contrast nephropathy, myoglobinuria.\n\n### Management Principles\n1. Identify and treat underlying cause\n2. Optimize volume status: Avoid over-resuscitation; target MAP ≥65 mmHg\n3. Avoid nephrotoxins: NSAIDs, aminoglycosides, iodinated contrast (hold metformin)\n4. Electrolyte management:\n   - Hyperkalemia: Calcium gluconate, insulin + dextrose, Kayexalate, dialysis\n   - Hyponatremia: Fluid restriction if dilutional\n5. Renal Replacement Therapy (RRT) Indications (AEIOU): Acidosis pH <7.1, Electrolyte emergency (K⁺ >6.5), Intoxication, Overload (refractory pulmonary edema), Uremia (BUN >100 mg/dL or uremic symptoms)\n\n### Red Flags\n- Anuria <50 mL/24h: Post-renal obstruction or cortical necrosis; urgent renal ultrasound\n- AKI + diffuse alveolar hemorrhage: Goodpasture syndrome (Anti-GBM); emergency plasmapheresis\n- AKI + purpuric rash + thrombocytopenia: TMA/HUS; ADAMTS13 and shiga toxin testing\n- Creatinine doubling within 24h: Rapidly progressive; escalate to nephrology"
+  },
+  {
+    "id": "chunk_19",
+    "domain": "Hematology",
+    "content_type": "diagnostic_criteria",
+    "severity_context": "emergency",
+    "keywords": [
+      "Pulmonary Embolism",
+      "DVT",
+      "Wells Score",
+      "D-dimer",
+      "CTPA",
+      "Anticoagulation",
+      "Thrombolysis"
+    ],
+    "content": "## Pulmonary Embolism: Diagnosis & Risk Stratification\n\n### Wells Score (Pre-Test Probability)\n| Criterion | Points |\n|-----------|--------|\n| Clinical signs of DVT | 3 |\n| PE #1 diagnosis OR no alternative diagnosis | 3 |\n| HR >100 bpm | 1.5 |\n| Immobilization ≥3 days or surgery in past 4 weeks | 1.5 |\n| Prior DVT or PE | 1.5 |\n| Hemoptysis | 1 |\n| Malignancy (active, on treatment, or palliative) | 1 |\n\n| Score | Probability | D-dimer Strategy |\n|-------|-------------|------------------|\n| ≤4 | Low–Intermediate | D-dimer; if negative → PE excluded |\n| >4 | High | Proceed to CTPA directly |\n\n### D-Dimer Interpretation\n- Standard threshold: 500 ng/mL (FEU)\n- Age-adjusted threshold: Age × 10 ng/mL for patients >50 years\n- D-dimer elevated in: PE, DVT, DIC, pregnancy, malignancy, post-surgery (low specificity)\n\n### PE Risk Stratification (ESC 2019)\n| Class | Criteria | 30-day Mortality | Management |\n|-------|---------|-----------------|------------|\n| Massive (High-risk) | SBP <90 mmHg or drop >40 mmHg | >15% | Systemic thrombolysis or embolectomy |\n| Submassive (Intermediate-high) | RV dysfunction + elevated troponin | 3–15% | Anticoagulation; monitor for deterioration |\n| Low-risk | PESI class I–II, normal RV, negative troponin | <1% | Home anticoagulation; HESTIA criteria |\n\n### Systemic Thrombolysis Protocol\n- Alteplase 100 mg IV over 2h (10 mg bolus + 90 mg over 2h)\n- Absolute contraindications: Recent (<3 months) intracranial surgery/trauma, prior ICH, active bleeding\n\n### Red Flags\n- Pulseless electrical activity (PEA) in PE: Immediate bedside echocardiography; consider thrombolysis in cardiac arrest\n- Saddle PE on CTPA: High clot burden; discuss catheter-directed thrombolysis vs. surgical embolectomy\n- Submassive PE + hemodynamic deterioration: Lower threshold for rescue thrombolysis\n- CTPA with RV/LV diameter ratio >0.9: RV pressure overload; troponin + BNP for risk stratification"
+  },
+  {
+    "id": "chunk_20",
+    "domain": "Gastroenterology",
+    "content_type": "emergency_triage",
+    "severity_context": "emergency",
+    "keywords": [
+      "GI Bleeding",
+      "Peptic Ulcer Disease",
+      "Glasgow-Blatchford Score",
+      "Hematemesis",
+      "Endoscopy",
+      "Proton Pump Inhibitor",
+      "Variceal Bleed"
+    ],
+    "content": "## Upper GI Bleeding: Assessment & Management\n\n### Definition\nAny hemorrhage proximal to the ligament of Treitz. Presents as hematemesis, 'coffee ground' emesis, or melena.\n\n### Glasgow-Blatchford Score (GBS) — Pre-Endoscopy Risk\n| Parameter | Finding | Score |\n|-----------|---------|-------|\n| BUN (mg/dL) | 18–22 | 2 |\n| | 22–28 | 3 |\n| | 28–70 | 4 |\n| | >70 | 6 |\n| Hemoglobin (g/dL), Male | 12–13 | 1 |\n| | 10–12 | 3 |\n| | <10 | 6 |\n| Hemoglobin (g/dL), Female | 10–12 | 1 |\n| | <10 | 6 |\n| SBP (mmHg) | 100–109 | 1 |\n| | 90–99 | 2 |\n| | <90 | 3 |\n| HR ≥100 bpm | | 1 |\n| Melena | | 1 |\n| Syncope | | 2 |\n| Hepatic disease | | 2 |\n| Cardiac failure | | 2 |\n\n| GBS | Risk | Intervention |\n|-----|------|-------------|\n| 0 | Very low | Outpatient management |\n| 1–5 | Low | Inpatient; elective endoscopy |\n| ≥6 | High | Urgent endoscopy <24h |\n\n### Initial Resuscitation\n- 2 large-bore IV lines (16G or larger)\n- Type and crossmatch (2–6 units pRBC)\n- Transfuse if Hb <7 g/dL (Hb <8 g/dL in cardiovascular disease)\n- PPI: Pantoprazole 80 mg IV bolus + 8 mg/h infusion\n- NPO; restrict to clears after stabilization\n\n### Variceal Bleeding Protocol\n1. Terlipressin 2 mg IV q4h (or Octreotide 50 mcg bolus + 50 mcg/h infusion)\n2. Ceftriaxone 1 g IV daily (primary prophylaxis reduces mortality)\n3. Urgent endoscopy with variceal band ligation within 12h\n4. TIPS (Transjugular Intrahepatic Portosystemic Shunt) if refractory\n\n### Red Flags\n- Hematemesis with visible clot or fresh blood: High-risk stigmata; urgent endoscopy within 24h (within 6–12h if hemodynamically unstable)\n- Bleeding + suspected aortic graft: Aortoenteric fistula; CT angiography + emergent surgical consultation\n- SBP <90 mmHg + Hb <8 g/dL: Massive UGIB; massive transfusion protocol\n- Rebleed after successful endoscopic therapy: Repeat endoscopy; consider surgery or angioembolization"
+  },
+  {
+    "id": "chunk_21",
+    "domain": "Toxicology",
+    "content_type": "emergency_triage",
+    "severity_context": "emergency",
+    "keywords": [
+      "Overdose",
+      "Toxicology",
+      "Opioid Toxidrome",
+      "Naloxone",
+      "Activated Charcoal",
+      "Acetaminophen Toxicity",
+      "NAC"
+    ],
+    "content": "## Toxicology: Toxidromes & Antidotes\n\n### Major Toxidromes\n| Toxidrome | Causative Agents | Key Signs | Antidote |\n|-----------|-----------------|-----------|----------|\n| Opioid | Heroin, Oxycodone, Fentanyl | Miosis, respiratory depression, CNS depression | Naloxone 0.4–2 mg IV/IM/IN |\n| Cholinergic (muscarinic) | Organophosphates, Carbamates | Salivation, Lacrimation, Urination, Defecation, Bradycardia, Bronchospasm (SLUDGE) | Atropine + Pralidoxime |\n| Anticholinergic | TCAs, Antihistamines, Atropine | Mydriasis, dry skin, hyperthermia, urinary retention, delirium | Physostigmine (selected cases) |\n| Sympathomimetic | Cocaine, Amphetamines, MDMA | Mydriasis, hypertension, tachycardia, hyperthermia | Benzodiazepines |\n| Serotonin Syndrome | SSRIs, SNRIs, MAOIs | Clonus, hyperthermia, agitation, diaphoresis | Cyproheptadine; Cooling |\n| Sedative-Hypnotic | Benzodiazepines, Barbiturates | CNS depression, normal pupils, respiratory depression | Flumazenil (benzodiazepines only — use with caution) |\n\n### Acetaminophen (APAP) Toxicity\n| Stage | Time Post-Ingestion | Features |\n|-------|---------------------|----------|\n| I | 0–24h | Nausea, vomiting, malaise |\n| II | 24–72h | RUQ pain, elevated LFTs, AKI begins |\n| III | 72–96h | Peak hepatotoxicity; ALT/AST >1000 IU/L, coagulopathy |\n| IV | 4 days–2 weeks | Recovery or fulminant hepatic failure |\n\n#### Rumack-Matthew Nomogram\n- Plot serum APAP level vs. time post-ingestion\n- Possible toxicity line: APAP 150 mcg/mL at 4h; 4.6 mcg/mL at 24h\n- Initiate NAC if APAP level above nomogram line\n\n#### N-Acetylcysteine (NAC) Protocol\n- IV: 150 mg/kg over 1h → 50 mg/kg over 4h → 100 mg/kg over 16h\n- PO: 140 mg/kg loading → 70 mg/kg q4h × 17 doses\n\n### General Decontamination\n| Method | Indication | Timing |\n|--------|------------|--------|\n| Activated charcoal | Oral ingestion, intact airway | <1–2h post-ingestion |\n| Gastric lavage | Massive ingestion, recent (<1h) | Selected cases only |\n| Whole bowel irrigation | Iron, sustained-release drugs, body packers | GoLYTELY 1.5–2 L/h |\n\n### Red Flags\n- Opioid with apnea: Immediate bag-mask ventilation before Naloxone\n- Naloxone after long-acting opioid (methadone, fentanyl patches): Repeat dosing or infusion (2/3 effective bolus dose per hour)\n- INR >6 in APAP toxicity: Fulminant hepatic failure; liver transplant evaluation\n- QRS >100 ms in TCA overdose: Sodium bicarbonate 1–2 mEq/kg IV bolus for QRS narrowing"
+  },
+  {
+    "id": "chunk_22",
+    "domain": "Hematology",
+    "content_type": "diagnostic_criteria",
+    "severity_context": "acute",
+    "keywords": [
+      "DIC",
+      "Disseminated Intravascular Coagulation",
+      "Fibrinogen",
+      "D-dimer",
+      "Microangiopathy",
+      "FFP",
+      "Sepsis-Coagulopathy"
+    ],
+    "content": "## Disseminated Intravascular Coagulation (DIC): Diagnosis & Management\n\n### Definition\nAcquired syndrome of systemic activation of coagulation leading to intravascular fibrin formation, consumption of clotting factors and platelets, and simultaneous thrombosis and hemorrhage.\n\n### ISTH Overt DIC Score\n| Parameter | Finding | Score |\n|-----------|---------|-------|\n| Platelet count (×10³/μL) | >100 | 0 |\n| | 50–100 | 1 |\n| | <50 | 2 |\n| Fibrin-related markers (D-dimer) | No increase | 0 |\n| | Moderate increase | 2 |\n| | Strong increase (>5× ULN) | 3 |\n| PT prolongation (seconds) | <3 | 0 |\n| | 3–6 | 1 |\n| | >6 | 2 |\n| Fibrinogen (g/L) | ≥1.0 | 0 |\n| | <1.0 | 1 |\n\nScore ≥5: Compatible with overt DIC\nScore <5: Suggestive but not overt; repeat in 24h\n\n### Common Triggers\n- Sepsis (most common)\n- Trauma/Burns\n- Obstetric: Abruptio placentae, AFE, HELLP syndrome\n- Malignancy (especially AML-M3, mucin-secreting adenocarcinomas)\n- Transfusion reactions\n- Envenomation\n\n### Management\n| Component | Indication | Product |\n|-----------|------------|--------|\n| Plasma | Active bleeding + INR >1.5 | FFP 15–20 mL/kg |\n| Platelets | Active bleeding + platelets <50×10³/μL | Platelets to target >50×10³/μL |\n| Fibrinogen | Fibrinogen <1.5 g/L + bleeding | Cryoprecipitate 10 units |\n| Heparin | Thrombosis-predominant DIC (purpura fulminans) | UFH infusion at low dose |\n| Tranexamic acid | Fibrinolysis-dominant (trauma) | 1g IV over 10 min within 3h |\n\n### Red Flags\n- Fibrinogen <0.5 g/L: Severe consumptive coagulopathy; aggressive cryoprecipitate replacement\n- DIC + AML-M3 (APL): Initiating ATRA simultaneously with supportive transfusion reduces mortality\n- Obstetric DIC (AFE/HELLP): Involve obstetric anesthesia + hematology; high maternal mortality\n- Purpura fulminans in DIC: Protein C concentrate if available; high amputation risk"
+  },
+  {
+    "id": "chunk_23",
+    "domain": "Infectious Disease",
+    "content_type": "treatment_protocol",
+    "severity_context": "emergency",
+    "keywords": [
+      "Meningitis",
+      "CSF Analysis",
+      "Lumbar Puncture",
+      "Empirical Antibiotics",
+      "Dexamethasone",
+      "Kernig Sign",
+      "Brudzinski Sign"
+    ],
+    "content": "## Bacterial Meningitis: Diagnosis & Treatment\n\n### Clinical Features\n- Classic triad: Fever + Neck stiffness + Altered consciousness (present in <50%)\n- Photophobia, phonophobia, headache, nausea/vomiting\n- Kernig sign: Inability to extend knee when hip is flexed 90°\n- Brudzinski sign: Involuntary hip/knee flexion on neck flexion\n- Petechial/purpuric rash: Meningococcal meningitis until proven otherwise\n\n### CSF Analysis: Bacterial vs. Viral\n| Parameter | Bacterial | Viral | Tuberculous | Fungal |\n|-----------|-----------|-------|-------------|--------|\n| Opening pressure | >200 mmH₂O | Normal–elevated | Elevated | Elevated |\n| Appearance | Cloudy | Clear | Clear–cloudy | Clear–cloudy |\n| WBC/μL | 1000–10,000 (PMN) | 100–1000 (lymph) | 100–500 (lymph) | 50–500 (lymph) |\n| Protein (mg/dL) | >100 | 50–100 | 100–500 | 100–500 |\n| Glucose | <40 (low) | Normal | Low (<45) | Low |\n| CSF/Serum Glucose | <0.3 | >0.6 | <0.5 | <0.3 |\n\n### Empirical Antibiotic Regimens (by Age)\n| Age Group | Pathogen Coverage | Regimen |\n|-----------|-----------------|--------|\n| Neonate (<1 month) | GBS, E. coli, Listeria | Ampicillin + Cefotaxime |\n| 1–3 months | GBS, E. coli, Listeria, N. meningitidis | Ampicillin + Ceftriaxone |\n| 3 months–50 years | N. meningitidis, S. pneumoniae | Ceftriaxone + Vancomycin |\n| >50 years | S. pneumoniae, Listeria | Ceftriaxone + Vancomycin + Ampicillin |\n| Immunocompromised | As above + Cryptococcus | + Liposomal Amphotericin B |\n\n### Dexamethasone Adjunctive Therapy\n- 0.15 mg/kg IV q6h × 4 days\n- Administer 15–30 min BEFORE or with first antibiotic dose\n- Benefit: Reduces hearing loss in pneumococcal meningitis; reduces mortality\n- Do NOT give if: Cryptococcal meningitis (worsens outcomes)\n\n### Red Flags\n- Do NOT delay antibiotics for LP if: GCS <13, papilledema, focal neurology, seizure, immunocompromised, new rash\n- Blood cultures + antibiotics FIRST, then CT, then LP\n- Petechial rash + fever ± hypotension: Meningococcemia — Penicillin G or Ceftriaxone immediately (before LP)\n- CSF opening pressure >400 mmH₂O: Drain CSF slowly; fungal meningitis most likely"
+  },
+  {
+    "id": "chunk_24",
+    "domain": "Rheumatology",
+    "content_type": "diagnostic_criteria",
+    "severity_context": "acute",
+    "keywords": [
+      "Systemic Lupus Erythematosus",
+      "SLE",
+      "Anti-dsDNA",
+      "SLICC Criteria",
+      "ANA",
+      "Lupus Nephritis",
+      "Complement"
+    ],
+    "content": "## Systemic Lupus Erythematosus (SLE): SLICC Diagnostic Criteria\n\n### Definition\nSLE: Systemic autoimmune disease characterized by immune dysregulation, autoantibody production, and multi-organ inflammation. F:M ratio ~9:1; peak onset ages 15–40.\n\n### SLICC 2012 Classification Criteria\nRequires ≥4 criteria (at least 1 clinical + 1 immunological) OR biopsy-proven lupus nephritis + ANA or anti-dsDNA.\n\n#### Clinical Criteria (11)\n1. Acute cutaneous lupus (malar rash, photosensitive rash)\n2. Chronic cutaneous lupus (discoid rash)\n3. Oral ulcers (non-painful)\n4. Non-scarring alopecia\n5. Synovitis ≥2 joints\n6. Serositis (pleuritis, pericarditis)\n7. Renal: Urine protein/creatinine >500 mg/g OR RBC casts\n8. Neurological (seizures, psychosis, mononeuritis multiplex, peripheral neuropathy)\n9. Hemolytic anemia\n10. Leukopenia (<4000/μL) or Lymphopenia (<1000/μL)\n11. Thrombocytopenia (<100,000/μL)\n\n#### Immunological Criteria (6)\n1. ANA above laboratory reference range\n2. Anti-dsDNA above reference (2× ELISA)\n3. Anti-Sm (highly specific for SLE)\n4. Antiphospholipid antibodies (lupus anticoagulant, anti-β2GPI, false-positive VDRL)\n5. Low complement (C3, C4, or CH50)\n6. Direct Coombs test positive (without hemolytic anemia)\n\n### Antibody Specificity Reference\n| Antibody | Sensitivity | Specificity | Association |\n|----------|-------------|-------------|-------------|\n| ANA | 98% | 74% | Screening test |\n| Anti-dsDNA | 70% | 90% | Disease activity/nephritis |\n| Anti-Sm | 25% | 99% | Highly specific for SLE |\n| Anti-Ro/SSA | 30–40% | — | Neonatal lupus, Sjögren overlap |\n| Anti-phospholipid | 30–40% | — | Thrombosis, recurrent miscarriage |\n\n### Lupus Nephritis ISN/RPS Classification\n| Class | Description | Treatment |\n|-------|-------------|----------|\n| I | Minimal mesangial | Monitoring |\n| II | Mesangial proliferative | Low-dose immunosuppression |\n| III/IV | Focal/Diffuse proliferative (most severe) | High-dose steroids + MMF or Cyclophosphamide |\n| V | Membranous | MMF + steroids |\n| VI | Sclerosing (>90% sclerotic glomeruli) | Renal replacement planning |\n\n### Red Flags\n- Anti-dsDNA rising + C3/C4 falling: Lupus nephritis flare; renal biopsy\n- Pleuritis + fever + pericardial effusion: Serositis or SLE-related infection; exclude\n- New seizure in SLE without other cause: Neuropsychiatric lupus; MRI + LP\n- Thrombocytopenia <20,000/μL: Risk of spontaneous hemorrhage; IVIG or steroids"
+  },
+  {
+    "id": "chunk_25",
+    "domain": "Gastroenterology",
+    "content_type": "diagnostic_criteria",
+    "severity_context": "acute",
+    "keywords": [
+      "Acute Pancreatitis",
+      "Ranson Criteria",
+      "BISAP Score",
+      "Lipase",
+      "Amylase",
+      "Pancreatic Necrosis",
+      "ERCP"
+    ],
+    "content": "## Acute Pancreatitis: Severity Assessment & Management\n\n### Definition\nAcute pancreatic inflammation caused by premature activation of digestive enzymes. Most common causes: gallstones (40%), alcohol (30%), hypertriglyceridemia, drugs, post-ERCP.\n\n### Diagnostic Criteria (≥2 of 3 features)\n1. Epigastric pain radiating to back\n2. Serum lipase or amylase ≥3× upper limit of normal\n3. Imaging findings of pancreatitis (CT/MRI)\n\n### BISAP Score (Bedside Index of Severity in Acute Pancreatitis)\n| Parameter | Criterion | Score |\n|-----------|-----------|-------|\n| BUN | >25 mg/dL | 1 |\n| Impaired Mental Status | GCS <15 | 1 |\n| SIRS | ≥2 SIRS criteria | 1 |\n| Age | >60 years | 1 |\n| Pleural effusion | Present on imaging | 1 |\n\n| BISAP | In-hospital Mortality |\n|-------|----------------------|\n| 0–2 | <2% |\n| 3 | 5–8% |\n| 4–5 | >15% |\n\n### Revised Atlanta Classification (2012)\n| Category | Criteria |\n|----------|----------|\n| Mild | No organ failure; no local complications |\n| Moderately Severe | Transient organ failure (<48h) OR local complications |\n| Severe | Persistent organ failure (>48h) |\n\n### Management\n1. Aggressive IV hydration: Lactated Ringer's 250–500 mL/h (preferred over NS; reduces SIRS)\n2. Analgesia: IV opioids (Morphine, Hydromorphone); avoid NSAIDs\n3. Nil by mouth initially; early enteral nutrition (NG or NJ route within 24–48h if severe)\n4. Antibiotics: NOT routinely indicated; reserve for infected necrosis (CT-guided FNA if suspected)\n5. ERCP: Only if concurrent cholangitis or CBD obstruction (not routine for gallstone pancreatitis)\n6. Cholecystectomy: Same admission if mild gallstone pancreatitis\n\n### Red Flags\n- Lipase >10× ULN + SIRS criteria: High risk for severe pancreatitis; ICU monitoring\n- Pancreatic necrosis >30% on CT with fever: Infected necrosis; CT-guided aspiration for culture\n- Hypocalcemia <8 mg/dL in pancreatitis: Fat saponification; severe case\n- Triglycerides >1000 mg/dL: Hypertriglyceridemia-induced pancreatitis; insulin infusion + plasmapheresis\n- Cullen's / Grey Turner's sign (periumbilical / flank ecchymosis): Hemorrhagic pancreatitis; high mortality"
+  },
+  {
+    "id": "chunk_26",
+    "domain": "Psychiatry",
+    "content_type": "diagnostic_criteria",
+    "severity_context": "emergency",
+    "keywords": [
+      "Serotonin Syndrome",
+      "NMS",
+      "Hyperthermia",
+      "Clonus",
+      "Muscle Rigidity",
+      "Cyproheptadine",
+      "Dantrolene"
+    ],
+    "content": "## Serotonin Syndrome vs. Neuroleptic Malignant Syndrome\n\n### Serotonin Syndrome\n#### Mechanism\nExcess serotonergic activity at 5-HT1A and 5-HT2A receptors; typically from drug-drug interactions.\n\n#### Hunter Criteria (Diagnosis)\nSerotonergic agent exposure + ONE of:\n- Clonus (spontaneous, inducible, or ocular) + agitation/diaphoresis\n- Tremor + hyperreflexia\n- Hypertonia + temperature >38°C + clonus\n\n#### Common Drug Combinations\n- SSRI + MAOI (highest risk; potentially fatal)\n- SSRI + Tramadol\n- SSRI + Linezolid\n- SSRI + Methylene blue\n- Triptans + SSRIs\n\n#### Management\n1. Discontinue all serotonergic agents\n2. Benzodiazepines for agitation and seizures\n3. Cyproheptadine 12 mg PO loading (5-HT2A antagonist), then 2 mg q2h\n4. Active cooling for temperature >41°C\n5. Intubation + paralysis if severe rigidity/hyperthermia\n\n### Neuroleptic Malignant Syndrome (NMS)\n#### Mechanism\nDopamine receptor blockade (antipsychotics) causing hypodopaminergic state in striatum and hypothalamus.\n\n#### DSM-5 Diagnostic Features\n1. Antipsychotic/dopamine-blocking agent exposure\n2. Hyperthermia (>38°C on two occasions)\n3. Generalized lead-pipe muscle rigidity\n4. Altered mental status\n5. Autonomic instability (diaphoresis, labile BP, tachycardia)\n6. Elevated CK (often >1000 IU/L; may exceed 100,000 IU/L)\n7. No other causative agent\n\n#### Management\n1. Discontinue antipsychotic/causative agent immediately\n2. Aggressive IV hydration\n3. Dantrolene 1–2.5 mg/kg IV (reduces rigidity)\n4. Bromocriptine 2.5–5 mg TID/QID PO (dopamine agonist)\n5. ICU admission; cool blankets; monitor for rhabdomyolysis/AKI\n\n### Key Differentiators\n| Feature | Serotonin Syndrome | NMS |\n|---------|-------------------|-----|\n| Onset | Hours | Days |\n| Muscle | Hyperreflexia, clonus | Lead-pipe rigidity |\n| Pupils | Mydriasis | Variable |\n| Bowel sounds | Hyperactive | Decreased |\n| Cause | Serotonergic drugs | Antipsychotics |\n\n### Red Flags\n- Temperature >41°C: Risk of rhabdomyolysis + DIC + MODS\n- CK >10,000 IU/L: Rhabdomyolysis + AKI risk; aggressive IV hydration\n- Hemodynamic instability in NMS: ICU; avoid dopamine-blocking antiemetics"
+  },
+  {
+    "id": "chunk_27",
+    "domain": "Dermatology",
+    "content_type": "emergency_triage",
+    "severity_context": "emergency",
+    "keywords": [
+      "Stevens-Johnson Syndrome",
+      "TEN",
+      "SCORTEN",
+      "Drug Reaction",
+      "Epidermal Necrolysis",
+      "Wound Care",
+      "Cyclosporine"
+    ],
+    "content": "## Stevens-Johnson Syndrome (SJS) & Toxic Epidermal Necrolysis (TEN)\n\n### Definition & Classification\nMucocutaneous drug hypersensitivity with keratinocyte apoptosis and epidermal detachment.\n| Diagnosis | BSA Detachment |\n|-----------|---------------|\n| SJS | <10% |\n| SJS/TEN overlap | 10–30% |\n| TEN | >30% |\n\n### Common Causative Drugs\n- Allopurinol (most common worldwide)\n- Carbamazepine, Lamotrigine, Phenytoin\n- Sulfonamides (sulfamethoxazole)\n- Nevirapine\n- NSAIDs (Oxicam class)\n\n### SCORTEN Mortality Score (Score each criterion = 1 point)\n| Criterion | Value |\n|-----------|-------|\n| Age | >40 years |\n| Malignancy | Present |\n| Heart rate | >120 bpm |\n| BUN | >28 mg/dL |\n| Detached BSA | >10% on Day 1 |\n| Bicarbonate | <20 mEq/L |\n| Blood glucose | >252 mg/dL |\n\n| SCORTEN | Predicted Mortality |\n|---------|--------------------|\n| 0–1 | 3.2% |\n| 2 | 12.1% |\n| 3 | 35.3% |\n| 4 | 58.3% |\n| ≥5 | >90% |\n\n### Management\n1. Immediate discontinuation of causative drug\n2. Transfer to burn unit (BSA >10%) or ICU\n3. Fluid resuscitation: 2–4 mL/kg/%BSA involved\n4. Non-adherent wound dressings (biological membranes, Biobrane)\n5. Eye care: Ophthalmology consult; artificial tears + topical antibiotics\n6. Oral care: Chlorhexidine mouth washes\n7. Immunomodulatory agents: Cyclosporine 3–5 mg/kg/day (most evidence) OR Etanercept\n8. Avoid: Systemic steroids (controversial; may increase infection risk)\n\n### Red Flags\n- BSA >30% (TEN): Burns unit admission; mortality >30–50%\n- Ocular involvement: Acute ocular involvement → chronic conjunctival scarring; ophthalmology within 24h\n- SCORTEN ≥3 on admission: High mortality; intensive supportive care\n- Sepsis in TEN: Leading cause of death; low threshold for blood cultures and empirical antibiotics"
+  },
+  {
+    "id": "chunk_28",
+    "domain": "Obstetrics",
+    "content_type": "emergency_triage",
+    "severity_context": "emergency",
+    "keywords": [
+      "Preeclampsia",
+      "Eclampsia",
+      "Magnesium Sulfate",
+      "Antihypertensive",
+      "HELLP Syndrome",
+      "Fetal Growth Restriction",
+      "Proteinuria"
+    ],
+    "content": "## Preeclampsia & Eclampsia: Diagnosis & Management\n\n### Definitions\n- **Preeclampsia**: New-onset hypertension (≥140/90 mmHg on two occasions ≥4h apart) after 20 weeks gestation + proteinuria (≥300 mg/24h or PCR ≥30 mg/mmol) OR severe features\n- **Eclampsia**: New-onset grand-mal seizure in woman with preeclampsia\n- **HELLP Syndrome**: Hemolysis + Elevated Liver enzymes + Low Platelets\n\n### Severe Features of Preeclampsia\n| Feature | Threshold |\n|---------|----------|\n| SBP | ≥160 mmHg on two occasions |\n| DBP | ≥110 mmHg on two occasions |\n| Thrombocytopenia | Platelets <100,000/μL |\n| Renal insufficiency | Creatinine >1.1 mg/dL or 2× baseline |\n| Impaired liver function | Transaminases ≥2× ULN + severe RUQ pain |\n| Pulmonary edema | New |\n| New-onset headache | Unresponsive to medication |\n\n### Antihypertensive Agents in Pregnancy\n| Agent | Dose | Notes |\n|-------|------|-------|\n| Labetalol | 20–80 mg IV bolus, or 200 mg PO | 1st line IV; avoid in asthma |\n| Hydralazine | 5–10 mg IV q20 min | Reflex tachycardia common |\n| Nifedipine (CCB) | 10–20 mg PO immediate-release | 1st line oral; avoid SL route |\n| Methyldopa | 250–500 mg TID PO | Safe; for chronic management |\n\nTarget BP: 130–150/80–100 mmHg (avoid overcorrection)\n\n### Magnesium Sulfate (Seizure Prophylaxis)\n- Loading: MgSO4 4–6 g IV over 15–20 min\n- Maintenance: 1–2 g/h IV infusion\n- Therapeutic range: 4–7 mEq/L\n- Toxicity monitoring: Deep tendon reflexes (loss at 7–10 mEq/L), RR (depression at >12 mEq/L), UO\n- Antidote: Calcium gluconate 1 g IV over 10 min\n\n### HELLP Syndrome Diagnostic Criteria\n| Parameter | Threshold |\n|-----------|----------|\n| Hemolysis | LDH >600 IU/L; abnormal blood film |\n| Elevated liver enzymes | AST/ALT >70 IU/L |\n| Low platelets | <100,000/μL |\n\n### Red Flags\n- Eclamptic seizure: MgSO4 bolus 2–4 g IV over 5 min; maintain airway; deliver fetus after stabilization\n- Platelets <50,000/μL in HELLP: Delivery regardless of gestational age; transfuse if active bleeding\n- Pulmonary edema in preeclampsia: Furosemide; strict fluid restriction (fluid overload risk high)\n- RUQ pain + rising transaminases: Hepatic capsule distension; risk of subcapsular hematoma rupture"
+  },
+  {
+    "id": "chunk_29",
+    "domain": "Orthopedics",
+    "content_type": "emergency_triage",
+    "severity_context": "emergency",
+    "keywords": [
+      "Compartment Syndrome",
+      "Fasciotomy",
+      "Elevated ICP",
+      "Ischemia",
+      "Delta Pressure",
+      "Trauma",
+      "Volkmann Contracture"
+    ],
+    "content": "## Acute Compartment Syndrome: Recognition & Management\n\n### Definition\nElevated pressure within a closed fascial compartment exceeding perfusion pressure, leading to ischemia and necrosis of muscle and nerves within that compartment.\n\n### Classical Presentation (6 Ps)\n| Sign | Clinical Finding |\n|------|------------------|\n| **P**ain | Severe, out of proportion to injury; with passive stretch |\n| **P**ressure | Compartment feels tense/woody |\n| **P**aresthesia | Numbness/tingling in distribution of compressed nerves |\n| **P**aralysis | Late finding; indicates irreversible ischemia |\n| **P**allor | Skin appears pale/mottled |\n| **P**ulselessness | Very late finding; pulses often preserved early |\n\n### Compartment Pressure Measurement\n- Normal intracompartmental pressure: 0–8 mmHg\n- Delta pressure = Diastolic BP − Compartment pressure\n- **Delta pressure <30 mmHg: Indication for fasciotomy**\n- Absolute compartment pressure >30 mmHg: Indication for fasciotomy\n\n### Common Sites & At-Risk Injuries\n| Site | Precipitating Injury |\n|------|---------------------|\n| Anterior leg | Tibial fracture, crush injury |\n| Volar forearm | Supracondylar fracture, IV infiltration |\n| Hand | Crush injury, high-pressure injection |\n| Gluteal/thigh | Femoral fracture, prolonged compression |\n| Foot | Calcaneal fracture |\n\n### Management\n1. Remove all circumferential dressings and casts immediately\n2. Elevate limb to heart level (not above — reduces perfusion)\n3. Maintain MAP ≥65 mmHg (optimize perfusion pressure)\n4. **Fasciotomy within 6 hours of diagnosis** (all compartments)\n5. Post-fasciotomy: Daily wound inspection; delayed primary closure at 48–72h or split-thickness skin graft\n\n### Red Flags\n- Pain with passive stretch is PATHOGNOMONIC: Diagnosis is clinical; do not delay for pressure measurement\n- Delay >6h to fasciotomy: Irreversible Volkmann ischemic contracture\n- Fasciotomy wounds with black/necrotic muscle: Debridement required; risk of life-threatening sepsis\n- AKI post-compartment syndrome: Rhabdomyolysis + myoglobinuria; aggressive IV hydration"
+  },
+  {
+    "id": "chunk_30",
+    "domain": "Endocrinology",
+    "content_type": "diagnostic_criteria",
+    "severity_context": "emergency",
+    "keywords": [
+      "Thyroid Storm",
+      "Burch-Wartofsky Score",
+      "Thyrotoxicosis",
+      "Hyperthyroidism",
+      "Propylthiouracil",
+      "Lugol Iodine",
+      "Beta-Blocker"
+    ],
+    "content": "## Thyroid Storm: Diagnosis & Emergency Management\n\n### Definition\nLife-threatening exacerbation of hyperthyroidism with multisystem dysfunction; mortality 10–30% even with treatment.\n\n### Burch-Wartofsky Point Scale (BWPS)\n| Parameter | Finding | Points |\n|-----------|---------|--------|\n| Temperature (°C) | 37.2–37.7 | 5 |\n| | 37.8–38.2 | 10 |\n| | 38.3–38.8 | 15 |\n| | 38.9–39.4 | 20 |\n| | 39.5–39.9 | 25 |\n| | ≥40.0 | 30 |\n| CNS effects | Absent | 0 |\n| | Mild (agitation) | 10 |\n| | Moderate (delirium/psychosis) | 20 |\n| | Severe (seizures/coma) | 30 |\n| GI-hepatic | Absent | 0 |\n| | Moderate (diarrhea/nausea) | 10 |\n| | Severe (jaundice) | 20 |\n| Heart Rate (bpm) | 99–109 | 5 |\n| | 110–119 | 10 |\n| | 120–129 | 15 |\n| | 130–139 | 20 |\n| | ≥140 | 25 |\n| AF | Present | 10 |\n| Precipitating event | Present | 10 |\n\n| BWPS | Diagnosis |\n|------|----------|\n| ≥45 | Thyroid storm |\n| 25–44 | Impending storm |\n| <25 | Unlikely |\n\n### Treatment Protocol (BBTIPS)\n| Step | Drug | Mechanism |\n|------|------|-----------|\n| **B** - Block synthesis | PTU 200 mg q4h PO/NG OR Methimazole 20 mg q4h | Inhibit thyroid peroxidase |\n| **B** - Block release | Lugol's iodine (5 drops q6h) — give 1h AFTER PTU | Wolff-Chaikoff effect |\n| **T** - Treat hyperstimulation | Cholestyramine 4g QID (reduces enterohepatic recirculation) | Bile acid sequestrant |\n| **I** - Inhibit peripheral conversion | PTU (preferred over methimazole) OR Propranolol | Reduces T4→T3 conversion |\n| **P** - Propranolol | 60–80 mg q4h PO or 1–2 mg IV | Heart rate control |\n| **S** - Steroids | Hydrocortisone 100 mg IV q8h | Blocks peripheral T4→T3; treats relative adrenal insufficiency |\n\n### Red Flags\n- Agitation + temperature >40°C + tachycardia >140 bpm: BWPS ≥45; initiate full protocol\n- Cardiac failure in thyroid storm: Amiodarone controversial (contains iodine); preferred: Esmolol IV\n- Precipitant search mandatory: Infection, surgery, trauma, radioiodine, contrast dye, DKA\n- PTU in first trimester: Switch to methimazole in 2nd/3rd trimester (hepatotoxicity risk with PTU)"
+  },
+  {
+    "id": "chunk_31",
+    "domain": "Neurology",
+    "content_type": "pathophysiology",
+    "severity_context": "acute",
+    "keywords": [
+      "Meningeal Signs",
+      "Raised ICP",
+      "Papilledema",
+      "Herniation Syndromes",
+      "Cushing Reflex",
+      "Cerebral Edema",
+      "Mannitol"
+    ],
+    "content": "## Raised Intracranial Pressure (ICP): Recognition & Management\n\n### Normal ICP Values\n- Adults: 7–15 mmHg\n- Children: 3–7 mmHg\n- Neonates: 1.5–6 mmHg\n- Therapeutic target in TBI: ICP <22 mmHg (BTF Guidelines 2016)\n\n### Cerebral Perfusion Pressure (CPP)\nCPP = MAP − ICP\n- Target in TBI: 60–70 mmHg\n- CPP <50 mmHg: Critical ischemia threshold\n\n### Monro-Kellie Doctrine\nFixed skull volume = Brain (80%) + CSF (10%) + Blood (10%). Increase in one compartment must be compensated by another; decompensation → exponential ICP rise.\n\n### Herniation Syndromes\n| Syndrome | Mechanism | Clinical Features |\n|----------|-----------|------------------|\n| Uncal (transtentorial) | Temporal lobe herniation through tentorium | Ipsilateral CN III palsy (dilated pupil), contralateral hemiplegia |\n| Central | Downward displacement of brainstem | Bilateral Babinski, decorticate→decerebrate |\n| Tonsillar | Cerebellar tonsils through foramen magnum | Bradycardia, respiratory arrest (Cushing reflex) |\n| Subfalcine | Cingulate gyrus under falx | ACA territory infarction, leg weakness |\n\n### Cushing Reflex (Triad)\n- Hypertension (widened pulse pressure)\n- Bradycardia\n- Irregular/slow respirations\n(Represents terminal herniation with brainstem compression)\n\n### Emergency ICP-Lowering Measures\n| Intervention | Target | Notes |\n|-------------|--------|-------|\n| Head elevation | 30° | Improves venous drainage |\n| Hyperventilation | PaCO2 35–40 mmHg (acute: 30–35) | Transient cerebral vasoconstriction; short-term bridge only |\n| Osmotherapy: Mannitol | 0.25–1.0 g/kg IV bolus | Target serum osmolality <320 mOsm/kg |\n| Osmotherapy: HTS (3% NaCl) | 250 mL bolus | Target Na 145–155 mEq/L |\n| Sedation + analgesia | Target ICP <22 mmHg | Propofol, Fentanyl |\n| Decompressive craniectomy | Refractory ICP >25 mmHg | Surgical option |\n\n### Red Flags\n- Fixed, dilated pupil (blown pupil): Uncal herniation; immediate CT, neurosurgical consult\n- Cushing triad: Imminent brainstem herniation; immediate osmotherapy + neurosurgery\n- Papilledema in LP workup: Perform CT first; LP contraindicated until mass lesion excluded"
+  },
+  {
+    "id": "chunk_32",
+    "domain": "Pulmonology",
+    "content_type": "emergency_triage",
+    "severity_context": "emergency",
+    "keywords": [
+      "Tension Pneumothorax",
+      "Chest Decompression",
+      "Needle Thoracostomy",
+      "Hemothorax",
+      "Chest Tube",
+      "Tracheal Deviation",
+      "Absent Breath Sounds"
+    ],
+    "content": "## Tension Pneumothorax: Recognition & Emergency Decompression\n\n### Definition\nAir accumulates under pressure in the pleural space (one-way valve mechanism), causing ipsilateral lung collapse + contralateral mediastinal shift + impaired venous return → cardiovascular collapse.\n\n### Clinical Features\n| Sign | Finding |\n|------|---------|\n| Tracheal deviation | Contralateral (away from tension) |\n| Absent breath sounds | Ipsilateral |\n| Distended neck veins | Present (unless concomitant hypovolemia) |\n| Hypotension | Present (obstructive shock) |\n| Tachycardia | Present |\n| Cyanosis | Late sign |\n\n### Diagnosis is CLINICAL — Do NOT wait for CXR if hemodynamically unstable.\n\n### Emergency Decompression\n#### Needle Thoracostomy (Immediate)\n- Site: 2nd intercostal space, midclavicular line OR 4th–5th ICS, anterior axillary line\n- Technique: 14–16G angiocath inserted ABOVE rib (avoids neurovascular bundle)\n- Rush of air confirms diagnosis\n- Temporizing measure only; follow with chest tube\n\n#### Chest Tube (Definitive)\n- Site: 4th–5th ICS, anterior axillary line (safe triangle)\n- Size: 28–32 Fr for pneumothorax; 32–36 Fr for hemothorax\n- Connect to underwater seal drainage; confirm re-expansion on CXR\n\n### Simple vs. Tension Pneumothorax\n| Feature | Simple | Tension |\n|---------|--------|--------|\n| Hemodynamics | Stable | Unstable |\n| Tracheal deviation | No | Yes (late) |\n| JVD | No | Yes |\n| Treatment | Chest tube / aspiration | Immediate needle decompression |\n\n### Red Flags\n- PEA arrest post-trauma: Tension pneumothorax until proven otherwise; bilateral needle decompression\n- Failed needle thoracostomy: Chest wall thickness >4.5 cm (in obese patients); advance longer needle or proceed directly to finger thoracostomy\n- Air leak continuing >5 days post-chest tube: Bronchopleural fistula; thoracic surgery consult\n- Hemothorax >1500 mL or >200 mL/h: Massive hemothorax; emergency thoracotomy"
+  },
+  {
+    "id": "chunk_33",
+    "domain": "Pediatrics",
+    "content_type": "treatment_protocol",
+    "severity_context": "emergency",
+    "keywords": [
+      "Febrile Seizure",
+      "Pediatric Seizure",
+      "Fever",
+      "Antipyretic",
+      "Benzodiazepine",
+      "Age-Specific",
+      "Meningitis Exclusion"
+    ],
+    "content": "## Pediatric Febrile Seizures: Classification & Management\n\n### Definition\nFebrile seizure: Seizure in febrile child aged 6 months–5 years without evidence of intracranial infection or metabolic cause.\n\n### Classification\n| Type | Characteristics |\n|------|----------------|\n| **Simple** | Generalized, duration <15 min, single occurrence within 24h, complete recovery |\n| **Complex** | Focal onset OR duration >15 min OR ≥2 within 24h OR incomplete recovery |\n\n### Immediate Management\n1. Lateral decubitus positioning (recovery position)\n2. Airway, Breathing, Circulation assessment\n3. Temperature measurement and fever management (Paracetamol 15 mg/kg OR Ibuprofen 10 mg/kg)\n4. Blood glucose (bedside)\n\n### Acute Seizure Termination (If >5 minutes)\n| Step | Drug | Dose | Route |\n|------|------|------|-------|\n| 1st | Midazolam | 0.2–0.3 mg/kg | Buccal or intranasal |\n| 1st (alt) | Diazepam | 0.3–0.5 mg/kg (max 10 mg) | PR |\n| 2nd | Lorazepam | 0.1 mg/kg IV | IV (if access) |\n| 3rd | Levetiracetam | 40–60 mg/kg IV | IV |\n| 4th | Phenobarbitone | 20 mg/kg IV | IV |\n\n### Lumbar Puncture Indications\n- Age <12 months: Always consider LP (signs may be subtle)\n- Age 12–18 months: LP if not fully immunized (HIB, pneumococcus) or clinical concern\n- Age >18 months: LP only if clinical signs of meningitis (neck stiffness, petechiae, photophobia)\n\n### Recurrence Risk\n| Risk Factor | Prevalence | Risk of Recurrence |\n|-------------|------------|-------------------|\n| Family history of febrile seizures | 30% | 50% |\n| Age <1 year at first seizure | | 50% |\n| Lower temperature at seizure | | Higher recurrence |\n\n### Red Flags\n- Complex febrile seizure: Full septic workup + neurology consult\n- Febrile seizure <6 months age: Meningitis/encephalitis until excluded\n- Todd's palsy post-febrile seizure: Transient focal weakness (30–60 min); confirm resolution\n- No fever found after reported febrile seizure: Consider Dravet syndrome (SCN1A mutation)"
+  },
+  {
+    "id": "chunk_34",
+    "domain": "Cardiology",
+    "content_type": "diagnostic_criteria",
+    "severity_context": "emergency",
+    "keywords": [
+      "Cardiac Tamponade",
+      "Beck's Triad",
+      "Pericardiocentesis",
+      "Pericardial Effusion",
+      "Obstructive Shock",
+      "Kussmaul Sign",
+      "Electrical Alternans"
+    ],
+    "content": "## Cardiac Tamponade: Recognition & Pericardiocentesis\n\n### Definition\nPericardial effusion accumulates sufficient pressure to compress cardiac chambers, impairing filling and causing obstructive shock. Rate of accumulation is more critical than volume.\n\n### Beck's Triad (Classic — seen in only 30–40% of cases)\n1. Hypotension\n2. Elevated JVP (distended neck veins)\n3. Muffled heart sounds\n\n### Additional Signs\n- **Pulsus paradoxus**: Drop in SBP >10 mmHg with inspiration (abnormal normally <10 mmHg)\n- **Kussmaul sign**: Paradoxical increase in JVP with inspiration (also seen in constrictive pericarditis)\n- **Tachycardia**: Compensatory\n- **Electrical alternans**: Alternating QRS amplitude on ECG (swinging heart motion)\n\n### Echocardiographic Findings\n- Right atrial collapse (early, in systole)\n- Right ventricular collapse (specific — in diastole)\n- IVC dilation with <50% respiratory collapse\n- Respiratory variation in mitral valve inflow >25%\n\n### Pericardiocentesis Technique\n- Access: Subxiphoid approach (45° angle, aimed toward left shoulder) under echo guidance\n- Needle: 18G spinal needle\n- Position: 30–45° semirecumbent\n- Confirm pericardial position: Echo visualization or pressure tracing (pericardial pressure = low, non-pulsatile)\n- Drain: Aspirate until hemodynamic improvement; leave pigtail catheter for recurrent effusions\n\n### Tamponade vs. Constrictive Pericarditis\n| Feature | Tamponade | Constrictive Pericarditis |\n|---------|-----------|---------------------------|\n| Pulsus paradoxus | Present | Present (mild) |\n| Kussmaul sign | Absent | Present |\n| Effusion on echo | Present | Absent |\n| Pericardial knock | Absent | Present (early S3) |\n| Respiratory ventricular variation | >25% | Present |\n\n### Red Flags\n- Equalization of diastolic pressures in all 4 chambers: Pathognomonic for tamponade on cardiac catheterization\n- Traumatic tamponade (hemopericardium): Do NOT perform pericardiocentesis alone; emergent pericardial window or thoracotomy\n- PEA arrest + suspected tamponade: Blind subxiphoid pericardiocentesis before echo confirmation\n- Rapidly re-accumulating effusion post-drainage: Malignancy, aortic dissection (contraindication to pericardiocentesis), tuberculosis"
+  },
+  {
+    "id": "chunk_35",
+    "domain": "Infectious Disease",
+    "content_type": "treatment_protocol",
+    "severity_context": "emergency",
+    "keywords": [
+      "HIV",
+      "AIDS",
+      "CD4 Count",
+      "Opportunistic Infections",
+      "PCP Prophylaxis",
+      "ART",
+      "Antiretroviral"
+    ],
+    "content": "## HIV/AIDS: Staging, Opportunistic Infections & ART\n\n### WHO Staging (CD4 Count Based)\n| Stage | CD4 Count | Features |\n|-------|-----------|----------|\n| 1 (Asymptomatic) | ≥500 cells/μL | Persistent generalized lymphadenopathy |\n| 2 (Mild) | 350–499 cells/μL | Minor weight loss, recurrent respiratory tract infections |\n| 3 (Advanced) | 200–349 cells/μL | Oral candidiasis, unexplained fever, pulmonary TB |\n| 4 (AIDS) | <200 cells/μL | AIDS-defining illnesses |\n\n### Opportunistic Infections by CD4 Count\n| CD4 (cells/μL) | Opportunistic Infection |\n|----------------|------------------------|\n| <500 | Kaposi sarcoma, Oral candidiasis |\n| <350 | Esophageal candidiasis, Pulmonary TB |\n| <200 | PCP (Pneumocystis jirovecii pneumonia), Toxoplasmosis |\n| <100 | Cryptococcal meningitis, CMV retinitis |\n| <50 | Mycobacterium avium complex (MAC), CMV disease |\n\n### Prophylaxis Guidelines\n| CD4 Count | Prophylaxis Agent | Indication |\n|-----------|------------------|------------|\n| <200 cells/μL | TMP-SMX DS 1 tab daily | PCP prophylaxis |\n| <100 cells/μL | TMP-SMX DS 1 tab daily | Toxoplasmosis prophylaxis |\n| <50 cells/μL | Azithromycin 1200 mg weekly | MAC prophylaxis |\n| All | TMP-SMX (if CD4 <350) | Bacterial infections |  \n\n### First-Line ART (WHO-Preferred Regimen 2023)\n- Dolutegravir (INSTI) + Tenofovir alafenamide (NRTI) + Emtricitabine (NRTI)\n- Alternative: Dolutegravir + Lamivudine (dual therapy)\n\n### IRIS (Immune Reconstitution Inflammatory Syndrome)\nParadoxical worsening of infection after ART initiation; occurs as immune system recovers.\n- Common trigger: TB, cryptococcosis, CMV\n- Management: Continue ART; NSAID or Prednisone for severe IRIS\n\n### Red Flags\n- Cryptococcal meningitis: LP with high opening pressure; therapeutic drainage; Amphotericin B + Flucytosine induction\n- PCP pneumonia + hypoxia: TMP-SMX high-dose + Prednisolone (if PaO2 <70 mmHg)\n- CMV retinitis: Fundoscopy; IV Ganciclovir induction → Valganciclovir maintenance\n- CD4 <50 without ART: MAC prophylaxis mandatory"
+  },
+  {
+    "id": "chunk_36",
+    "domain": "Pharmacology",
+    "content_type": "pathophysiology",
+    "severity_context": "acute",
+    "keywords": [
+      "Corticosteroids",
+      "Adrenal Suppression",
+      "Glucocorticoid",
+      "Mineralocorticoid",
+      "Cushing Syndrome",
+      "Immunosuppression",
+      "Tapering"
+    ],
+    "content": "## Corticosteroids: Mechanism, Equivalence & Adverse Effects\n\n### Mechanism of Action\nGlucocorticoids bind intracellular GR (glucocorticoid receptor) → nuclear translocation → transcription factor modulation:\n- Anti-inflammatory: Inhibit NF-κB → ↓ IL-1, IL-6, TNF-α, COX-2\n- Immunosuppressive: Reduce T-cell proliferation, lymphocyte trafficking\n- Metabolic: Stimulate gluconeogenesis, lipolysis, protein catabolism\n\n### Potency Equivalence Table\n| Drug | Glucocorticoid Potency | Mineralocorticoid Potency | Duration |\n|------|----------------------|--------------------------|----------|\n| Hydrocortisone | 1 (reference) | 1 | Short (8–12h) |\n| Prednisolone | 4 | 0.8 | Intermediate (12–36h) |\n| Methylprednisolone | 5 | 0.5 | Intermediate (12–36h) |\n| Dexamethasone | 25–30 | 0 | Long (36–54h) |\n| Fludrocortisone | 10 | 125 | — (mineralocorticoid replacement) |\n| Betamethasone | 25–30 | 0 | Long |\n\n### Major Adverse Effects\n| System | Effect |\n|--------|--------|\n| Metabolic | Hyperglycemia, weight gain, dyslipidemia |\n| Musculoskeletal | Osteoporosis, avascular necrosis (femoral head), proximal myopathy |\n| Endocrine | HPA axis suppression → adrenal insufficiency on withdrawal |\n| Ophthalmologic | Posterior subcapsular cataracts, glaucoma |\n| Dermatologic | Skin thinning, striae, impaired wound healing, purpura |\n| Psychiatric | Euphoria, psychosis, insomnia (dose-dependent) |\n| Immunologic | Susceptibility to opportunistic infections |\n| Cardiovascular | Hypertension, fluid retention |\n| GI | Peptic ulceration (especially with NSAIDs) |\n\n### Steroid Tapering Principle\nHPA suppression occurs with >20 mg prednisolone equivalent daily >3 weeks. Taper if prolonged course to avoid adrenal crisis.\n\n### Red Flags\n- Abrupt steroid cessation after >3 weeks: Adrenal crisis; Hydrocortisone 100 mg IV stat + 200 mg/24h infusion\n- Steroids in uncontrolled DM: Hyperglycemic hyperosmolar state risk; frequent glucose monitoring\n- Long-term steroids without bisphosphonate: Osteoporosis prophylaxis (Alendronate/Risedronate) required if >3 months therapy\n- Psychosis on steroids: Reduce dose; Haloperidol for acute management"
+  },
+  {
+    "id": "chunk_37",
+    "domain": "Neurology",
+    "content_type": "diagnostic_criteria",
+    "severity_context": "chronic",
+    "keywords": [
+      "Multiple Sclerosis",
+      "MS",
+      "Demyelination",
+      "McDonald Criteria",
+      "MRI",
+      "Oligoclonal Bands",
+      "Optic Neuritis"
+    ],
+    "content": "## Multiple Sclerosis: McDonald Criteria & Management\n\n### Definition\nMS: Chronic inflammatory demyelinating disease of the CNS characterized by lesions disseminated in space (DIS) and time (DIT), with relapsing-remitting or progressive course.\n\n### McDonald 2017 Criteria\n#### Diagnosis requires:\n- ≥2 clinical attacks with objective evidence\n- DIS: ≥1 T2 lesion in ≥2 regions (periventricular, cortical/juxtacortical, infratentorial, spinal cord)\n- DIT: Simultaneous enhancing and non-enhancing lesions OR new T2/enhancing lesion on follow-up\n- CSF-specific oligoclonal bands (if DIS/DIT not met by imaging)\n\n### Typical Presentations\n| Syndrome | Features |\n|----------|----------|\n| Optic Neuritis | Unilateral painful visual loss; relative afferent pupillary defect (RAPD) |\n| Internuclear Ophthalmoplegia | MLF lesion → ipsilateral adduction failure, contralateral nystagmus |\n| Lhermitte Sign | Electric shock sensation down spine on neck flexion |\n| Uhthoff Phenomenon | Symptom worsening with heat/fever (Uhthoff) |\n| Transverse Myelitis | Incomplete spinal cord syndrome; sensory level |\n\n### CSF Findings\n| Finding | Significance |\n|---------|--------------|\n| Oligoclonal IgG bands (≥2 bands, not in serum) | Found in >95% MS patients |\n| Elevated IgG index | Increased intrathecal IgG synthesis |\n| Mild pleocytosis (<50 WBC/μL) | Non-specific |\n\n### MRI Characteristics\n- Periventricular: Dawson's fingers (perpendicular to corpus callosum)\n- Infratentorial: Brainstem, cerebellar lesions\n- Gadolinium-enhancing lesions: Active inflammation (blood-brain barrier disruption)\n- T2/FLAIR hyperintensities: Old and new lesions\n\n### Disease-Modifying Therapies (DMTs)\n| Efficacy | Drug | Route |\n|----------|------|-------|\n| Low | Beta-interferons, Glatiramer | SC/IM injection |\n| Moderate | Teriflunomide, Dimethyl fumarate | Oral |\n| High | Natalizumab, Ocrelizumab, Cladribine, Alemtuzumab | IV/SC/Oral |\n\n### Red Flags\n- Rapid progressive MS: Consider high-efficacy DMT early\n- Natalizumab + JC virus seropositive >24 months: PML (Progressive Multifocal Leukoencephalopathy) risk; monitor JC index\n- Optic neuritis without MS treatment: 50% risk of MS within 15 years; preventive DMT in high-risk patients\n- Spinal cord lesion >3 vertebral segments: Consider NMOSD (anti-AQP4 antibody) rather than MS"
+  },
+  {
+    "id": "chunk_38",
+    "domain": "Emergency Medicine",
+    "content_type": "treatment_protocol",
+    "severity_context": "emergency",
+    "keywords": [
+      "Burns",
+      "TBSA",
+      "Parkland Formula",
+      "Inhalation Injury",
+      "Escharotomy",
+      "Rule of Nines",
+      "Lund-Browder Chart"
+    ],
+    "content": "## Burns: Assessment & Initial Management\n\n### Burn Depth Classification\n| Degree | Depth | Appearance | Sensation | Healing |\n|--------|-------|------------|-----------|--------|\n| Superficial (1st) | Epidermis | Erythema, no blisters | Painful | 3–5 days |\n| Superficial partial-thickness (2nd) | Epidermis + superficial dermis | Moist, blistered, red/pink | Very painful | 14 days |\n| Deep partial-thickness (2nd deep) | Epidermis + deep dermis | Pale/mottled, may have blisters | Reduced sensation | >21 days; graft often needed |\n| Full-thickness (3rd) | All skin layers | Dry, leathery, white/brown/black | Painless | Requires grafting |\n| Deep full-thickness (4th) | Muscle/bone involved | Charred | No sensation | Amputation |\n\n### TBSA Estimation\n#### Rule of Nines (Adult)\n| Region | TBSA |\n|--------|------|\n| Head + Neck | 9% |\n| Each Arm | 9% |\n| Anterior Trunk | 18% |\n| Posterior Trunk | 18% |\n| Each Leg | 18% |\n| Perineum | 1% |\n\nNote: Superficial (1st degree) burns NOT included in TBSA calculation.\n\n### Parkland Formula (Fluid Resuscitation)\n- 4 mL × body weight (kg) × %TBSA burned = 24h total Lactated Ringer's\n- Give 50% in first 8h (from time of injury, not hospital arrival)\n- Give remaining 50% over next 16h\n- Target urine output: 0.5–1 mL/kg/h (adults); 1 mL/kg/h (children)\n\n### Inhalation Injury Criteria\n- Singed nasal hair or eyebrows\n- Carbonaceous sputum\n- Facial burns\n- Hoarseness or stridor\n- Enclosed space exposure\n→ Suspected inhalation injury: Early intubation (airway edema worsens over hours)\n\n### Burns Transfer Criteria (ABA Guidelines)\n- Burns >10% TBSA (children); >20% TBSA (adults)\n- Full-thickness burns >5% TBSA\n- Burns involving face, hands, feet, genitalia, perineum, major joints\n- Inhalation injury\n- Chemical or electrical burns\n- Burns with significant pre-existing medical conditions\n\n### Red Flags\n- CO poisoning (cherry-red skin, normal SpO2): SpO2 falsely normal; use ABG CO-oximetry; 100% FiO2 until COHb <5%\n- Circumferential burns extremity/chest: Escharotomy required for compartment syndrome or restricted ventilation\n- Burns + hypotension: Under-resuscitation or inhalation injury; reassess Parkland calculation\n- Urine output >1 mL/kg/h: Over-resuscitation risk; reduce IV rate"
+  },
+  {
+    "id": "chunk_39",
+    "domain": "Pharmacology",
+    "content_type": "pathophysiology",
+    "severity_context": "chronic",
+    "keywords": [
+      "Beta-Blockers",
+      "Heart Rate",
+      "Adrenergic Receptors",
+      "Propranolol",
+      "Carvedilol",
+      "Metoprolol",
+      "Contraindications"
+    ],
+    "content": "## Beta-Blockers: Pharmacology, Indications & Contraindications\n\n### Receptor Selectivity\n| Drug | β1 Selectivity | β2 | α1 | ISA | Class |\n|------|---------------|----|----|-----|-------|\n| Metoprolol | Selective | — | — | No | Cardioselective |\n| Atenolol | Selective | — | — | No | Cardioselective |\n| Bisoprolol | Selective | — | — | No | Cardioselective |\n| Carvedilol | Non-selective | + | Yes | No | Third-generation (α+β blocker) |\n| Propranolol | Non-selective | + | — | No | Non-selective |\n| Labetalol | Non-selective | + | Yes | — | α+β blocker |\n| Pindolol | Non-selective | + | — | Yes | ISA (intrinsic sympathomimetic) |\n\n### Pharmacodynamic Effects\n- Negative chronotropy: ↓ HR (SA node automaticity)\n- Negative inotropy: ↓ Contractility\n- ↓ AV conduction: Slows PR interval\n- ↓ Renin release: Antihypertensive mechanism\n- ↓ Oxygen demand: Angina mechanism\n\n### Indications\n| Indication | Preferred Agent |\n|------------|----------------|\n| Heart failure (HFrEF) | Carvedilol, Bisoprolol, Metoprolol succinate |\n| Hypertension | Any (but not first-line per JNC8) |\n| Stable angina | Any |\n| Post-MI | Metoprolol, Atenolol |\n| AF rate control | Metoprolol |\n| Varices prophylaxis (portal HTN) | Propranolol, Carvedilol |\n| Thyroid storm | Propranolol (non-selective; blocks T4→T3) |\n| Migraine prophylaxis | Propranolol, Metoprolol |\n\n### Contraindications\n- Decompensated heart failure with active fluid overload (relative)\n- Cardiogenic shock\n- Severe bradycardia (HR <50 bpm) or high-degree AV block\n- Severe reactive airway disease (especially non-selective beta-blockers)\n- Cocaine intoxication: Unopposed alpha-adrenergic stimulation → coronary spasm\n- Peripheral arterial disease (caution; worsens claudication)\n\n### Red Flags\n- Abrupt beta-blocker withdrawal: Rebound tachycardia, angina, MI; taper over 1–2 weeks\n- Non-selective beta-blocker in asthma: Risk of fatal bronchospasm; use cardioselective agent if mandatory\n- Beta-blocker + verapamil IV: Life-threatening bradycardia and AV block\n- Overdose: Glucagon 5–10 mg IV (bypasses beta-receptor); high-dose insulin euglycemic therapy"
+  },
+  {
+    "id": "chunk_40",
+    "domain": "Gastroenterology",
+    "content_type": "diagnostic_criteria",
+    "severity_context": "chronic",
+    "keywords": [
+      "Liver Cirrhosis",
+      "Child-Pugh Score",
+      "MELD Score",
+      "Portal Hypertension",
+      "Ascites",
+      "Hepatic Encephalopathy",
+      "Variceal Prophylaxis"
+    ],
+    "content": "## Liver Cirrhosis: Severity Scoring & Complications\n\n### Child-Pugh Score\n| Parameter | 1 point | 2 points | 3 points |\n|-----------|---------|----------|----------|\n| Total Bilirubin (mg/dL) | <2 | 2–3 | >3 |\n| Albumin (g/dL) | >3.5 | 2.8–3.5 | <2.8 |\n| INR | <1.7 | 1.7–2.3 | >2.3 |\n| Ascites | None | Mild | Moderate–Severe |\n| Encephalopathy | None | Grade I–II | Grade III–IV |\n\n| Class | Score | 1-Year Survival | 2-Year Survival |\n|-------|-------|----------------|----------------|\n| A (Compensated) | 5–6 | 100% | 85% |\n| B (Significant) | 7–9 | 80% | 60% |\n| C (Decompensated) | 10–15 | 45% | 35% |\n\n### MELD Score\nMELD = 9.57 × ln(creatinine) + 3.78 × ln(bilirubin) + 11.20 × ln(INR) + 6.43\n- Range: 6–40 (higher = worse prognosis)\n- MELD >15: Liver transplantation listing typically recommended\n- MELD >35: >80% 3-month mortality\n\n### Major Complications of Cirrhosis\n\n#### Ascites\n- SAAG ≥1.1 g/dL: Portal hypertension cause (cirrhosis, right HF)\n- Management: Sodium restriction (<2g/day), Spironolactone (100 mg/day) ± Furosemide (40 mg/day)\n- Tense ascites: Large volume paracentesis; albumin 6–8 g/L removed\n\n#### Spontaneous Bacterial Peritonitis (SBP)\n- Diagnosis: Ascitic PMN ≥250 cells/mm³\n- Treatment: Cefotaxime 2g IV q8h; add Albumin 1.5 g/kg day 1, 1 g/kg day 3 (reduces renal failure)\n- Prophylaxis: Norfloxacin 400 mg daily (after 1st episode)\n\n#### Hepatic Encephalopathy\n- Grades I–IV (from personality change → coma)\n- Management: Lactulose (titrate to 2–3 soft stools/day); Rifaximin 550 mg BD (reduces recurrence)\n- Precipitants: GI bleeding, infection, sedatives, constipation, hyponatremia\n\n#### Hepatorenal Syndrome (HRS)\n- HRS-AKI: Creatinine ≥1.5 mg/dL, no response to volume expansion, no intrinsic renal disease\n- Treatment: Terlipressin + Albumin (most evidence)\n\n### Red Flags\n- Ascites + fever + abdominal pain: SBP until diagnostic paracentesis proves otherwise\n- Encephalopathy + GI bleeding: Double precipitant; urgent lactulose + treat bleed\n- Acute-on-chronic liver failure (ACLF): Jaundice + coagulopathy + organ failure; MELD rapidly rising; urgent transplant evaluation\n- New hepatic artery thrombosis post-transplant: Surgical emergency"
+  },
+  {
+    "id": "chunk_41",
+    "domain": "Oncology",
+    "content_type": "emergency_triage",
+    "severity_context": "emergency",
+    "keywords": [
+      "Febrile Neutropenia",
+      "ANC",
+      "Empirical Antibiotics",
+      "Oncologic Emergency",
+      "Sepsis",
+      "G-CSF",
+      "Antifungal"
+    ],
+    "content": "## Febrile Neutropenia: Definition, Risk & Management\n\n### Definition\n- Fever: Single oral temperature ≥38.3°C OR ≥38.0°C sustained for ≥1 hour\n- Neutropenia: ANC (Absolute Neutrophil Count) <500 cells/μL OR <1000 cells/μL with predicted nadir <500 cells/μL\n\n### MASCC Risk Score (Low-risk criteria)\n| Parameter | Points |\n|-----------|--------|\n| Symptoms: no or mild | 5 |\n| No hypotension | 5 |\n| No COPD | 4 |\n| Solid tumor or hematologic malignancy without prior fungal infection | 4 |\n| No dehydration | 3 |\n| Outpatient status | 3 |\n| Age <60 years | 2 |\n\nMASCC ≥21: Low risk; outpatient oral antibiotics (Ciprofloxacin + Amoxicillin-clavulanate)\nMASCC <21: High risk; IV antibiotics + admission\n\n### Empirical IV Antibiotic Regimens\n| Risk | Preferred Regimen |\n|------|------------------|\n| Low-risk inpatient | Cefepime 2g IV q8h OR Piperacillin-tazobactam 4.5g IV q6h |\n| High-risk (suspected Pseudomonas, unstable) | Cefepime OR Meropenem (anti-pseudomonal) |\n| MRSA risk factors (skin/soft tissue source, hemodynamically unstable) | Add Vancomycin |\n| Persistent fever >4–7 days or antifungal indication | Fluconazole OR Micafungin OR Amphotericin B |\n\n### Duration of Antibiotics\n- Continue until ANC >500 cells/μL AND patient afebrile ≥48h\n- If ANC recovery delayed: Reassess at day 5–7; escalate antifungal coverage\n\n### G-CSF (Filgrastim) Use\n- Primary prophylaxis: If chemotherapy regimen carries >20% febrile neutropenia risk\n- Therapeutic: Can shorten neutropenia duration; not routinely given during acute febrile neutropenia episode\n- Dose: 5 mcg/kg SC daily until ANC >2000 cells/μL\n\n### Red Flags\n- ANC <100 cells/μL + fever >72h: Profound neutropenia; escalate to Meropenem + antifungal\n- Hypotension + ANC <500: Neutropenic sepsis; treat as oncologic emergency with full sepsis protocol\n- Perirectal abscess in neutropenia: Do NOT perform incision and drainage; Pip-Taz + anaerobic coverage\n- New pulmonary infiltrate + neutropenia: CT chest; consider invasive aspergillosis (Voriconazole)"
+  },
+  {
+    "id": "chunk_42",
+    "domain": "Endocrinology",
+    "content_type": "diagnostic_criteria",
+    "severity_context": "chronic",
+    "keywords": [
+      "Hypothyroidism",
+      "TSH",
+      "Free T4",
+      "Levothyroxine",
+      "Myxedema Coma",
+      "Hashimoto Thyroiditis",
+      "Autoimmune"
+    ],
+    "content": "## Hypothyroidism: Classification, Diagnosis & Management\n\n### Classification\n| Type | TSH | Free T4 | Cause |\n|------|-----|---------|-------|\n| Primary | ↑ (>4.5 mIU/L) | ↓ | Hashimoto, post-ablation, iodine deficiency |\n| Secondary | ↓ or Normal | ↓ | Pituitary failure |\n| Tertiary | ↓ or Normal | ↓ | Hypothalamic failure |\n| Subclinical | ↑ (4.5–10 mIU/L) | Normal | Early/mild primary hypothyroidism |\n\n### Clinical Features\n| System | Symptoms |\n|--------|----------|\n| General | Fatigue, weight gain, cold intolerance |\n| Cardiovascular | Bradycardia, pericardial effusion, diastolic hypertension |\n| Neurological | Slowed reflexes (delayed relaxation phase), cognitive slowing |\n| Musculoskeletal | Myalgia, proximal myopathy, elevated CK |\n| Dermatological | Dry skin, hair loss (outer 1/3 of eyebrows), myxedema |\n| Reproductive | Menorrhagia, infertility, hyperprolactinemia |\n| Metabolic | Hypercholesterolemia, hyponatremia, macrocytic anemia |\n\n### Diagnosis\n- 1st line: TSH\n- If TSH elevated: Add Free T4\n- If TSH low + hypothyroid symptoms: Add Free T3, pituitary MRI\n- Anti-TPO antibodies: Confirms Hashimoto's thyroiditis\n\n### Treatment\n| Indication | Starting Levothyroxine Dose |\n|------------|----------------------------|\n| Healthy adult | 1.6 mcg/kg/day PO |\n| Elderly or cardiac disease | 12.5–25 mcg/day; titrate slowly |\n| Pregnancy | Increase dose by 20–30% immediately on confirmation |\n| Subclinical hypothyroidism | Treat if TSH >10, symptoms, or pregnancy planning |\n\n### Myxedema Coma (Severe/Emergency)\n- Precipitants: Infection, cold exposure, medications (sedatives, anesthesia)\n- Features: Hypothermia (<35°C), bradycardia, altered consciousness, hypoventilation, hyponatremia\n- Management:\n  - T4: 200–400 mcg IV loading → 100 mcg IV daily\n  - T3: 5–20 mcg IV bolus (faster CNS effect)\n  - Hydrocortisone 100 mg IV (before thyroid hormone — exclude concurrent adrenal insufficiency)\n  - Passive rewarming; mechanical ventilation if needed\n\n### Red Flags\n- TSH >100 mIU/L: Severe primary hypothyroidism; risk of myxedema\n- Hyponatremia <125 mEq/L in hypothyroidism: SIADH-like picture; levothyroxine corrects it\n- New angina after starting levothyroxine: Demand ischemia from increased metabolic rate; slow dose titration\n- Pregnancy + elevated TSH: Start/increase levothyroxine immediately; TSH target <2.5 mIU/L in 1st trimester"
+  },
+  {
+    "id": "chunk_43",
+    "domain": "Nephrology",
+    "content_type": "diagnostic_criteria",
+    "severity_context": "chronic",
+    "keywords": [
+      "Chronic Kidney Disease",
+      "CKD",
+      "GFR",
+      "KDIGO",
+      "Proteinuria",
+      "eGFR",
+      "Renal Replacement Therapy"
+    ],
+    "content": "## Chronic Kidney Disease (CKD): KDIGO Classification & Management\n\n### Definition\nAbnormalities of kidney structure or function present >3 months with health implications.\n\n### KDIGO CKD Classification\n| Stage | GFR (mL/min/1.73m²) | Description |\n|-------|---------------------|-------------|\n| G1 | ≥90 | Normal or high (with markers of kidney damage) |\n| G2 | 60–89 | Mildly decreased |\n| G3a | 45–59 | Mildly-moderately decreased |\n| G3b | 30–44 | Moderately-severely decreased |\n| G4 | 15–29 | Severely decreased |\n| G5 | <15 | Kidney failure |\n\n### Albuminuria Categories (A1–A3)\n| Category | ACR (mg/g) | Description |\n|----------|------------|-------------|\n| A1 | <30 | Normal to mildly increased |\n| A2 | 30–300 | Moderately increased |\n| A3 | >300 | Severely increased |\n\n### Risk Stratification Matrix (GFR × Albuminuria)\nHigh-risk CKD: G3b–G5 OR A3 (any stage).\n\n### Management by Stage\n| Focus | Intervention |\n|-------|-------------|\n| BP target | <130/80 mmHg (ACEi/ARB preferred if proteinuria) |\n| Proteinuria reduction | ACEi or ARB (dual blockade contraindicated) |\n| Glycemic control | HbA1c <7% in DM |\n| Cardiovascular risk | Statin (all CKD patients with CVD risk) |\n| Anemia | Iron (target ferritin 200–500, TSAT 20–50%); Erythropoiesis-stimulating agents if Hb <10 g/dL |\n| Bone disease (CKD-MBD) | Phosphate restriction; Vitamin D; Calcimimetics (CKD G5D) |\n| Acidosis | Sodium bicarbonate if HCO₃⁻ <22 mEq/L |\n| SGLT2 inhibitors | Dapagliflozin/Empagliflozin: Reduce CKD progression (GFR ≥20) |\n\n### Indications for Renal Replacement Therapy\n- GFR <10–15 mL/min with uremic symptoms\n- Refractory fluid overload, acidosis, hyperkalemia\n- Pericarditis, encephalopathy, bleeding diathesis (uremic)\n\n### Red Flags\n- Sudden eGFR decline >25%: Check for AKI on CKD (NSAIDs, contrast, dehydration, ACEi)\n- Hyperkalemia >6.0 mEq/L: Emergency; cardiac monitoring; treat acutely\n- GFR <30 + metformin: Risk of lactic acidosis; reduce/discontinue metformin\n- Unexplained rapid GFR loss: Biopsy for RPGN (ANCA, anti-GBM), multiple myeloma cast nephropathy"
+  },
+  {
+    "id": "chunk_44",
+    "domain": "Cardiology",
+    "content_type": "pathophysiology",
+    "severity_context": "emergency",
+    "keywords": [
+      "Aortic Dissection",
+      "Stanford Classification",
+      "Type A",
+      "Type B",
+      "D-dimer",
+      "CT Angiography",
+      "Antihypertensive"
+    ],
+    "content": "## Aortic Dissection: Classification, Diagnosis & Management\n\n### Definition\nTear in aortic intima allowing blood to enter medial layer, creating true and false lumens. Medical/surgical emergency.\n\n### Stanford Classification\n| Type | Involvement | Mortality Without Treatment | Management |\n|------|-------------|----------------------------|------------|\n| Type A | Ascending aorta (regardless of origin) | 1–2% per hour initially | Emergency surgical repair |\n| Type B | Descending aorta only (distal to left subclavian) | Lower (untreated) | Medical (antihypertensive) unless complicated |\n\n### Clinical Presentation\n- Abrupt tearing/ripping pain: Anterior chest (ascending), Back/interscapular (descending)\n- Pulse deficit: >20 mmHg BP differential between arms\n- Hypertension (most common) OR hypotension (cardiac tamponade, aortic rupture)\n- Neurological deficits: Carotid involvement → stroke; spinal artery → paraplegia\n- New AR murmur: Aortic valve ring dilation\n\n### Diagnostic Algorithm\n1. ECG: Rule out STEMI (if dissection mimics MI, thrombolytics are catastrophic)\n2. CXR: Widened mediastinum (>8 cm), pleural effusion\n3. D-dimer: >500 ng/mL sensitivity >95%; negative D-dimer + low pretest probability: Reasonable to exclude\n4. CT aortography (gold standard): Identifies extent, entry tear, branch vessel involvement\n5. TEE: Bedside, useful in hemodynamically unstable patients\n\n### Medical Management (Type B)\n- Target: SBP 100–120 mmHg AND HR <60 bpm\n- First line: IV Labetalol OR Esmolol (beta-blockade first, then vasodilate)\n- If beta-blocker contraindicated: Diltiazem IV\n- Avoid pure vasodilators (Nitroprusside) without beta-blocker (reflex tachycardia increases aortic wall stress)\n\n### Type B Complicated Indications for Intervention (TEVAR)\n- Malperfusion (limb, mesenteric, renal)\n- Aortic expansion >5 mm in 6 months OR diameter >6 cm\n- Refractory pain or hypertension despite maximal medical therapy\n- Rupture\n\n### Red Flags\n- Hypotension + Type A dissection: Cardiac tamponade or rupture; immediate OR\n- Dissection + inferior STEMI on ECG: Right coronary artery ostium involvement; surgery preferred over PCI\n- Dissection extending to mesenteric artery: Bowel ischemia; surgical emergency\n- Anticoagulation or thrombolytics given for suspected STEMI actually Type A: Catastrophic; check for asymmetric pulses before thrombolytics"
+  },
+  {
+    "id": "chunk_45",
+    "domain": "Pediatrics",
+    "content_type": "diagnostic_criteria",
+    "severity_context": "acute",
+    "keywords": [
+      "Kawasaki Disease",
+      "Coronary Artery Aneurysm",
+      "IVIG",
+      "Aspirin",
+      "Mucocutaneous Lymph Node Syndrome",
+      "Echocardiography",
+      "Fever"
+    ],
+    "content": "## Kawasaki Disease: Diagnostic Criteria & Management\n\n### Definition\nKawasaki disease (KD): Acute self-limiting vasculitis primarily affecting medium-sized arteries. Most common acquired heart disease in children in developed countries. Peak age: 6 months–5 years.\n\n### Diagnostic Criteria (Classic KD)\nFever ≥5 days PLUS ≥4 of the following 5 criteria:\n| Criterion | Description |\n|-----------|-------------|\n| **C** - Conjunctivitis | Bilateral, non-purulent bulbar conjunctival injection |\n| **R** - Rash | Polymorphous (not vesicular or bullous) |\n| **A** - Adenopathy | Cervical lymphadenopathy >1.5 cm; usually unilateral, non-suppurative |\n| **S** - Strawberry tongue/lips | Erythema and cracking of lips, strawberry tongue, pharyngeal erythema |\n| **H** - Hands/Feet | Acute: Erythema + edema; Subacute: Periungual desquamation (Harlequin sign) |\n\n### Incomplete KD\n- Fever ≥5 days + 2–3 clinical features\n- If laboratory markers positive (CRP ≥3 mg/dL OR ESR ≥40 mm/h) + echo or lab criteria: Treat as KD\n\n### Laboratory Findings\n| Marker | Expected Finding |\n|--------|----------------|\n| CRP | Elevated (>3 mg/dL) |\n| ESR | Elevated (>40 mm/h) |\n| WBC | Leukocytosis (>15,000/μL in acute phase) |\n| Albumin | ≤3 g/dL |\n| ALT | Mildly elevated (not specific) |\n| Platelets | Thrombocytosis in week 2–3 (often >1,000,000/μL) |\n| Urine | Sterile pyuria (urethral inflammation) |\n| Na+ | Hyponatremia |\n\n### Treatment\n1. **IVIG**: 2 g/kg IV single dose (within first 10 days; reduces coronary aneurysm risk from 25% to <4%)\n2. **Aspirin**: High-dose 30–50 mg/kg/day until afebrile, then low-dose 3–5 mg/kg/day for 6–8 weeks\n3. **Corticosteroids**: For IVIG-resistant KD (2nd IVIG dose OR Infliximab OR Methylprednisolone)\n4. **Echocardiography**: At diagnosis, 2 weeks, 6–8 weeks\n\n### Red Flags\n- Coronary artery aneurysm (Z-score ≥2.5): Highest risk if >8 mm (giant aneurysm); anticoagulation + clopidogrel\n- IVIG resistance (persistent fever ≥36h): Second IVIG dose; consider Infliximab or steroids\n- Kawasaki shock syndrome (hypotension): Aggressive IVIG + steroids; ICU\n- Hydrops of gallbladder: Common in acute KD; self-limiting; surgical intervention rarely needed"
+  },
+  {
+    "id": "chunk_46",
+    "domain": "Orthopedics",
+    "content_type": "diagnostic_criteria",
+    "severity_context": "emergency",
+    "keywords": [
+      "Septic Arthritis",
+      "Joint Aspiration",
+      "Synovial Fluid Analysis",
+      "Staphylococcus aureus",
+      "Arthrocentesis",
+      "Crystals",
+      "Osteomyelitis"
+    ],
+    "content": "## Septic Arthritis: Diagnosis & Management\n\n### Definition\nJoint space infection, typically bacterial. Medical emergency requiring joint drainage and antibiotics to prevent irreversible cartilage destruction.\n\n### Risk Factors\n- Prosthetic joint\n- Pre-existing joint disease (RA, gout, OA)\n- IV drug use\n- Immunocompromised state\n- Recent joint surgery or injection\n\n### Synovial Fluid Analysis\n| Type | WBC/μL | PMN% | Glucose | Appearance |\n|------|--------|------|---------|------------|\n| Normal | <200 | <25% | Normal | Clear, yellow |\n| Non-inflammatory | 200–2000 | <25% | Normal | Yellow, clear |\n| Inflammatory (RA, gout) | 2000–50,000 | 50–75% | Slightly low | Turbid |\n| Septic | >50,000 (often >100,000) | >90% | Very low | Opaque, purulent |\n| Crystal (gout/pseudogout) | 2000–50,000 | Variable | Normal | Turbid |\n\n### Crystal Analysis\n| Crystal | Appearance | Joint | Diagnosis |\n|---------|------------|-------|-----------|\n| Monosodium urate | Needle-shaped, negatively birefringent | MTP, ankle, knee | Gout |\n| Calcium pyrophosphate | Rhomboid, positively birefringent | Knee, wrist | Pseudogout (CPPD) |\n\n### Causative Organisms (by Population)\n| Population | Likely Pathogen |\n|------------|-----------------|\n| Adults | S. aureus (most common), Streptococcus |\n| Sexually active young adults | N. gonorrhoeae |\n| Children <2 years | S. aureus, Streptococcus, K. kingae |\n| IV drug users | P. aeruginosa, S. aureus |\n| Prosthetic joint | S. epidermidis, S. aureus, Cutibacterium acnes |\n\n### Management\n1. Arthrocentesis (diagnostic AND therapeutic) — drain completely\n2. Empirical antibiotics:\n   - Non-gonococcal: Flucloxacillin 2g IV q6h (MRSA risk: Vancomycin)\n   - Gonococcal: Ceftriaxone 1g IV daily\n3. Repeat daily aspiration OR surgical washout if: loculated, hip/shoulder joint, poor response\n4. IV antibiotics → PO transition when CRP falling and clinically improved (typically 2 weeks IV)\n\n### Red Flags\n- WBC >100,000/μL: Septic arthritis until proven otherwise; do NOT delay drainage\n- Septic arthritis of hip in child: Surgical drainage (irreversible AVN risk within hours)\n- Fever + hot joint in RA on DMARDs: Septic arthritis vs. flare; WBC >50,000 favors infection\n- Negative Gram stain and culture: Does NOT rule out septic arthritis; treat if WBC >50,000"
+  },
+  {
+    "id": "chunk_47",
+    "domain": "Pulmonology",
+    "content_type": "treatment_protocol",
+    "severity_context": "emergency",
+    "keywords": [
+      "Acute Respiratory Failure",
+      "Mechanical Ventilation",
+      "ARDS",
+      "Berlin Criteria",
+      "Lung-Protective Ventilation",
+      "PEEP",
+      "Prone Positioning"
+    ],
+    "content": "## ARDS: Berlin Criteria & Lung-Protective Ventilation\n\n### Berlin Definition (2012)\n| Parameter | Criteria |\n|-----------|----------|\n| Timing | Within 1 week of known clinical insult or new/worsening respiratory symptoms |\n| Imaging | Bilateral opacities on CXR/CT; not fully explained by effusions, atelectasis, or nodules |\n| Origin of edema | Not fully explained by cardiac failure or fluid overload (BNP, echo if unclear) |\n| Oxygenation | PaO₂/FiO₂ ratio on PEEP ≥5 cmH₂O |\n\n### Severity Classification\n| Category | PaO₂/FiO₂ (mmHg) | PEEP |\n|----------|------------------|------|\n| Mild | 201–300 | ≥5 cmH₂O |\n| Moderate | 101–200 | ≥5 cmH₂O |\n| Severe | ≤100 | ≥5 cmH₂O |\n\n### Lung-Protective Ventilation (ARDSnet Protocol)\n| Parameter | Setting |\n|-----------|--------|\n| Tidal Volume | 6 mL/kg IBW (NOT actual body weight) |\n| Plateau Pressure | ≤30 cmH₂O |\n| Driving Pressure | ≤15 cmH₂O (Plateau − PEEP) |\n| PEEP | Titrated to FiO₂ requirements (ARDSnet PEEP/FiO₂ table) |\n| Target SpO₂ | 88–95% (permissive hypoxemia acceptable) |\n| Target PaO₂ | 55–80 mmHg |\n| pH target | 7.25–7.45 (permissive hypercapnia acceptable if pH ≥7.20) |\n| FiO₂ | Titrate to minimum to achieve SpO₂ target |\n\n### Adjunct Therapies for Severe ARDS\n| Intervention | Evidence | Indication |\n|-------------|----------|------------|\n| Prone positioning | Reduces 28-day mortality (PROSEVA) | PaO₂/FiO₂ ≤150; ≥16h/day sessions |\n| Neuromuscular blockade | Reduces effort breathing, improves synchrony | Moderate-severe within 48h |\n| High PEEP strategy | Improves oxygenation; no mortality benefit shown | Moderate-severe ARDS |\n| Inhaled Nitric Oxide | Improves oxygenation transiently | Bridge to ECMO consideration |\n| ECMO (VV-ECMO) | Last resort; centers with expertise | Severe ARDS + PaO₂/FiO₂ <80 despite optimal ventilation |\n\n### Red Flags\n- Plateau pressure >30 cmH₂O: Barotrauma risk; reduce tidal volume\n- Driving pressure >15 cmH₂O: Associated with increased mortality; modify PEEP or VT\n- PaO₂/FiO₂ <80 on 100% FiO₂ + PEEP 15–20: ECMO consideration\n- Prone positioning contraindications: Spinal instability, open abdomen, increased ICP"
+  },
+  {
+    "id": "chunk_48",
+    "domain": "Pharmacology",
+    "content_type": "pathophysiology",
+    "severity_context": "chronic",
+    "keywords": [
+      "ACE Inhibitors",
+      "RAAS",
+      "Angiotensin",
+      "Bradykinin",
+      "Renal Protection",
+      "Hyperkalemia",
+      "Angioedema"
+    ],
+    "content": "## ACE Inhibitors: Mechanism, Indications & Adverse Effects\n\n### Mechanism of Action\nACE inhibitors block Angiotensin Converting Enzyme → prevent Angiotensin I → Angiotensin II conversion:\n- Vasodilation: ↓ Angiotensin II → ↓ vasoconstriction + ↓ aldosterone → ↓ sodium/water retention\n- Bradykinin accumulation: Prevents bradykinin degradation → additional vasodilation + cough (adverse effect)\n- Renal: ↓ Efferent arteriolar constriction → ↓ intraglomerular pressure → proteinuria reduction\n\n### Drug Examples & Dosing\n| Drug | Prodrug | Starting Dose | Max Dose |\n|------|---------|--------------|----------|\n| Ramipril | Yes (Ramiprilat) | 2.5 mg OD | 10 mg OD |\n| Lisinopril | No | 5 mg OD | 40 mg OD |\n| Enalapril | Yes (Enalaprilat) | 5 mg BD | 40 mg/day |\n| Captopril | No | 6.25 mg TID | 150 mg/day |\n| Perindopril | Yes | 2–4 mg OD | 8 mg OD |\n\n### Clinical Indications\n- Hypertension (first-line in diabetic nephropathy, proteinuric CKD)\n- Heart failure (HFrEF — proven mortality benefit)\n- Post-MI (within 24h; reduces LV remodeling)\n- Diabetic nephropathy (reduces progression; standard of care)\n- Chronic CKD with proteinuria\n- Secondary stroke prevention (HOPE trial: Ramipril)\n\n### Adverse Effects\n| Effect | Mechanism | Frequency | Management |\n|--------|-----------|-----------|------------|\n| Dry cough | Bradykinin accumulation | 10–20% | Switch to ARB |\n| Hyperkalemia | ↓ Aldosterone | 1–10% | Monitor K⁺; avoid if K⁺ >5.0 mEq/L |\n| Angioedema | Bradykinin (not IgE) | 0.1–0.5% | Discontinue immediately; icatibant for acute |\n| AKI (functional) | Reduced GFR in stenosis | Variable | Discontinue; bilateral RAS contraindication |\n| Hypotension | Vasodilation | Common early | Start low; monitor first dose |\n| Teratogenicity | Fetal RAAS required for development | — | Contraindicated in pregnancy (2nd/3rd trimester) |\n\n### Red Flags\n- Angioedema with lip/tongue/larynx: Airway emergency; epinephrine + stop ACEi; bradykinin-mediated (antihistamines less effective)\n- Creatinine rise >30% after ACEi start: Possible bilateral renal artery stenosis; stop and investigate\n- ACEi + NSAID + diuretic: Triple whammy; high AKI risk\n- ACEi + ARB dual blockade: ONTARGET trial; increased renal failure and hypotension without added benefit"
+  },
+  {
+    "id": "chunk_49",
+    "domain": "Hematology",
+    "content_type": "diagnostic_criteria",
+    "severity_context": "acute",
+    "keywords": [
+      "Sickle Cell Disease",
+      "Vaso-Occlusive Crisis",
+      "Acute Chest Syndrome",
+      "Hydroxyurea",
+      "Exchange Transfusion",
+      "HbS",
+      "Sickling"
+    ],
+    "content": "## Sickle Cell Disease: Complications & Management\n\n### Pathophysiology\nHomozygous HbS: Point mutation (Glu→Val at β-globin position 6) → HbS polymerization under hypoxia → RBC sickling → vaso-occlusion, hemolysis, end-organ damage.\n\n### Major Acute Complications\n\n#### Vaso-Occlusive Crisis (VOC)\n- Presentation: Severe bone pain (long bones, spine, ribs); triggered by cold, dehydration, infection, hypoxia\n- Management:\n  1. IV fluids (maintain euvolemia)\n  2. Analgesia: WHO pain ladder — opioids (Morphine PCA for severe)\n  3. Oxygen only if SpO2 <95%\n  4. NSAIDs (adjunct unless renal impairment)\n\n#### Acute Chest Syndrome (ACS)\n- Definition: New pulmonary infiltrate + fever AND one of: chest pain, cough, dyspnea, hypoxia\n- Mechanism: Fat embolism, infection, in-situ sickling in pulmonary vasculature\n- Management:\n  1. Incentive spirometry (prevents atelectasis)\n  2. Empirical antibiotics (Ceftriaxone + Azithromycin — atypical cover)\n  3. Simple transfusion (raise Hb to 10 g/dL if <9 g/dL)\n  4. Exchange transfusion if rapid deterioration or PaO₂ <70 mmHg\n  5. Oxygen; mechanical ventilation if respiratory failure\n\n#### Aplastic Crisis\n- Cause: Parvovirus B19 infection → temporary erythroid suppression\n- Hb drops dramatically; reticulocytes ↓\n- Treatment: Transfusion support; self-limiting (10–14 days)\n\n#### Stroke in SCD\n- Children: Highest stroke risk of any pediatric condition\n- Prevention: Transcranial Doppler (TCD) screening annually age 2–16; exchange transfusion if TCD velocity >200 cm/s\n- Acute stroke: Emergency exchange transfusion to reduce HbS <30%\n\n### Disease-Modifying Treatment\n| Intervention | Mechanism | Benefit |\n|-------------|-----------|--------|\n| Hydroxyurea | ↑ HbF production (inhibits sickling) | Reduces VOC frequency, ACS, mortality |\n| Crizanlizumab | Anti-P-selectin antibody | Reduces VOC frequency |\n| Voxelotor | Increases HbS oxygen affinity | Reduces sickling, improves Hb |\n| L-glutamine | Reduces oxidative stress | Reduces ACS |\n| Curative: HSCT | Allogenic hematopoietic stem cell transplant | Cure if matched sibling donor |\n\n### Red Flags\n- Priapism >4h: Urological emergency; aspiration + irrigation ± exchange transfusion\n- Acute splenic sequestration: Sudden Hb drop + splenomegaly (children <5 years); urgent transfusion\n- ACS + deteriorating SpO2: Exchange transfusion; ICU ventilatory support\n- Stroke: Reduce HbS to <30% via exchange transfusion urgently"
+  }
+]

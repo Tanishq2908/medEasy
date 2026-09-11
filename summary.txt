@@ -1,0 +1,84 @@
+Project Workflow Summary for doctor-ai / medEasy
+
+1. Project Overview
+- The repository is a hybrid healthcare AI platform combining a React/Vite frontend, a Node.js/Express backend, and a Python Flask-based ML inference service.
+- The frontend targets patient/hospital/lab workflows, including authentication, appointment booking, lab report uploads, and AI-supported diagnostics.
+- The backend provides user management, appointment scheduling, lab report storage, diagnosis records, and city/lab lookup APIs.
+- The Python backend loads specialist diagnostic models from the local `modelsPred/` folder and serves inference functionality.
+
+2. Frontend Architecture
+- Built with React + Vite.
+- Uses Tailwind CSS, Framer Motion, React Router, Lucide icons, and PDF/Tesseract libraries.
+- Key frontend pages include login/signup, patient dashboard, lab portal, appointment booking, report comparison, and various analysis screens.
+- Components are organized under `src/components`, pages under `src/pages`, and context providers under `src/context`.
+
+3. Backend Architecture (Node.js / Express)
+- Main server file: `server/index.js`.
+- Uses Mongoose to connect to MongoDB Atlas via `process.env.MONGO_URI`.
+- Defines schemas and models for:
+  - Users (`UserSchema`): name, email, password, city, role, createdAt.
+  - Appointments (`AppointmentSchema`): patient, lab, test, date, slot, status, report file metadata.
+  - Patient diagnoses (`PatientDiagnosisSchema`): summary, parameters, risk assessment, cancer data, overall score.
+  - Doctor diagnoses (`DoctorDiagnosisSchema`): patient details, summary, threats, verdict.
+  - Lab reports (`LabReportSchema`): uploaded files, AI analysis, status, upload metadata.
+- API routes include:
+  - Authentication: `/api/auth/register`, `/api/auth/login`
+  - City/lab lookup: `/api/cities`, `/api/labs/by-city/:city`
+  - Auth middleware verifies JWTs from `x-auth-token`.
+
+4. ML Inference Service (`app.py`)
+- Uses Flask and Flask-CORS to expose inference endpoints.
+- Loads four model files from `modelsPred/`:
+  - `ecg_model.pkl`    → ECG model (PyTorch / timm MaxViT, 4 classes)
+  - `kidney_final_detection_and_classification.pkl` → Kidney model (Keras / likely notebook or saved model)
+  - `lung_cancer_model (1).pkl` → Lung cancer model (PyTorch EfficientNet-B0 / state dict)
+  - `model.pkl`        → Brain tumor model (Keras Xception)
+- Uses a custom `CPU_Unpickler` to remap PyTorch tensors to CPU when loading pickles on a CPU-only machine.
+- Preprocessing pipelines:
+  - `ecg_tf`: Resize 224x224 + ImageNet normalization.
+  - `lung_tf`: Resize 224x224 + mean 0.5 / std 0.5 normalization.
+  - `keras_preprocess`: Resize to target HW, RGB conversion, `/255` rescaling.
+- Inference dispatch logic:
+  - `is_keras_model` detects TensorFlow/Keras models.
+  - `run_keras`: runs Keras models with `model.predict`.
+  - `run_torch`: runs PyTorch models with softmax.
+  - `run_sklearn`: supports sklearn-style prediction objects.
+  - `smart_infer`: chooses the correct inference path based on model type and available metadata.
+- Model class mappings are defined for each diagnostic domain.
+
+5. Model Workflow
+- On startup, `app.py` checks for existence of each model path and attempts to load them.
+- The loader prints status for each model and handles load failures gracefully.
+- ECG and Lung models can be assembled from state dictionaries using `timm` if necessary.
+- Kidney and Brain models are expected to be Keras models and are loaded via pickle.
+- Inference endpoints (not fully read but implied) use the loaded models to classify medical images and return labels/confidence.
+
+6. Diagnostic Testing Utilities
+- `aa.py` is a small local test script that:
+  - Loads the kidney model path from `app.py`
+  - Reads and converts image files with OpenCV and PIL
+  - Calls the inference helper from `app.py`
+  - Prints the inference label and confidence
+- `check_models.py` was added to inspect the contents of `.pkl` files and identify whether they are actual models or notebook objects.
+
+7. Important Notes and Observations
+- The frontend and backend are separated: React/Vite for UI, Express for API, Flask/Python for ML inference.
+- Some `.pkl` files in `modelsPred/` are not pure model objects but notebook objects or require additional libraries (`torch`, `keras`) for loading.
+- The current workflow depends on correct model serialization and matching preprocessing pipelines.
+- If the model pickle files are invalid or notebook files, the inference service will fallback or fail to load those models.
+
+8. Suggested Workflow Steps
+1. Start the Node.js backend (`server/index.js`) to serve user, appointment, and report APIs.
+2. Start the React frontend with `npm run dev` to access patient/hospital dashboards.
+3. Start the ML service `app.py` to host medical inference routes.
+4. Ensure `modelsPred/` contains valid serialized models for ECG, kidney, lung, and brain prediction.
+5. Use the frontend or direct test scripts to send image input, receive classification output, and store results in MongoDB.
+
+9. Summary of System Flow
+- User interacts with React UI.
+- Frontend calls Express API for auth, appointments, lab reporting.
+- For diagnostic image analysis, the system routes data to the Python/Flask inference service.
+- The Python service loads the appropriate model, preprocesses the image, runs inference, and returns diagnosis labels.
+- Results can be stored in the backend database as diagnosis records or lab report metadata.
+
+This summary is saved in `summary.txt` for your reference.

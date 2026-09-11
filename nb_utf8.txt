@@ -1,0 +1,838 @@
+﻿
+============================================================
+  CT SCAN / LUNG
+============================================================
+
+--- Cell 2 ---
+from torchvision import datasets, transforms
+from torch.utils.data import DataLoader
+
+TRAIN_PATH = "data/Data/train"
+VAL_PATH   = "data/Data/valid"
+TEST_PATH  = "data/Data/test"
+
+IMG_SIZE = 224
+BATCH_SIZE = 32
+
+transform = transforms.Compose([
+    transforms.Resize((IMG_SIZE, IMG_SIZE)),
+    transforms.ToTensor(),
+    transforms.Normalize(mean=[0.5], std=[0.5])
+])
+
+train_data = datasets.ImageFolder(TRAIN_PATH, transform=transform)
+val_data   = datasets.ImageFolder(VAL_PATH, transform=transform)
+test_data  = datasets.ImageFolder(TEST_PATH, transform=transform)
+
+train_loader = DataLoader(train_data, batch_size=BATCH_SIZE, shuffle=True)
+val_loader   = DataLoader(val_data, batch_size=BATCH_SIZE)
+test_loader  = DataLoader(test_data, batch_size=BATCH_SIZE)
+
+print("Classes:", train_data.classes)
+
+--- Cell 3 ---
+import torch
+import torch.nn as nn
+import timm
+
+device = 'cuda' if torch.cuda.is_available() else 'cpu'
+
+model = timm.create_model('efficientnet_b0', pretrained=True)
+
+num_classes = len(train_data.classes)
+model.classifier = nn.Linear(model.classifier.in_features, num_classes)
+
+model = model.to(device)
+
+--- Cell 4 ---
+import torch.optim as optim
+
+criterion = nn.CrossEntropyLoss()
+optimizer = optim.Adam(model.parameters(), lr=1e-4)
+
+EPOCHS = 5
+
+for epoch in range(EPOCHS):
+    model.train()
+
+    total_loss = 0
+    correct = 0
+    total = 0
+
+    for images, labels in train_loader:
+        images, labels = images.to(device), labels.to(device)
+
+        optimizer.zero_grad()
+
+        outputs = model(images)
+        loss = criterion(outputs, labels)
+
+        loss.backward()
+        optimizer.step()
+
+        total_loss += loss.item()
+
+        preds = torch.argmax(outputs, dim=1)
+        correct += (preds == labels).sum().item()
+        total += labels.size(0)
+
+    print(f"Epoch {epoch+1} | Loss: {total_loss/len(train_loader):.4f} | Acc: {100*correct/total:.2f}%")
+
+--- Cell 5 ---
+from sklearn.metrics import classification_report
+
+model.eval()
+
+y_true, y_pred = [], []
+
+with torch.no_grad():
+    for images, labels in test_loader:
+        images = images.to(device)
+
+        outputs = model(images)
+        preds = torch.argmax(outputs, dim=1).cpu().numpy()
+
+        y_true.extend(labels.numpy())
+        y_pred.extend(preds)
+
+print(classification_report(y_true, y_pred, target_names=train_data.classes))
+
+--- Cell 12 ---
+import torch.nn.functional as F
+model.eval()
+with torch.no_grad():
+    outputs = model(input_tensor)
+    # Apply softmax to get probabilities for all classes
+    probabilities = F.softmax(outputs, dim=1)[0]
+    # Get the top prediction and its confidence score
+    conf, predicted = torch.max(probabilities, 0)
+
+# 4. Print results and all confidence levels
+class_names = train_data.classes
+print(f"--- Results for: {image_path} ---")
+print(f"Final Prediction: {class_names[predicted.item()]} ({conf.item()*100:.2f}%)\n")
+
+print("Confidence Levels:")
+for i, class_name in enumerate(class_names):
+    score = probabilities[i].item() * 100
+    print(f"- {class_name}: {score:.2f}%")
+
+--- Cell 13 ---
+class_names = train_data.classes
+print("Prediction:", class_names[predicted.item()])
+
+--- Cell 14 ---
+import torch
+from google.colab import files
+
+# 1. Define the filename
+model_path = "lung_cancer_model.pth"
+
+# 2. Save the model state dictionary
+torch.save(model.state_dict(), model_path)
+
+# 3. Download to your computer
+files.download(model_path)
+print(f"Model saved and download triggered: {model_path}")
+
+--- Cell 15 ---
+import pickle
+from google.colab import files
+
+# 1. Define the filename
+pkl_path = "lung_cancer_model.pkl"
+
+# 2. Save using pickle
+with open(pkl_path, 'wb') as f:
+    pickle.dump(model, f)
+
+# 3. Download to your computer
+files.download(pkl_path)
+print(f"Pickle model saved and download triggered: {pkl_path}")
+
+============================================================
+  KIDNEY
+============================================================
+
+--- Cell 0 ---
+import os
+import cv2
+import random
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
+import seaborn as sns
+
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import confusion_matrix
+
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout
+from tensorflow.keras.optimizers import Adam
+
+--- Cell 6 ---
+# -------------------- Create DataFrames --------------------
+# Each dataframe contains image paths and labels
+df_train_normal = pd.DataFrame({'image_path': train_normal, 'label': 'Normal'})
+df_val_normal = pd.DataFrame({'image_path': val_normal, 'label': 'Normal'})
+df_test_normal = pd.DataFrame({'image_path': test_normal, 'label': 'Normal'})
+
+df_train_stone = pd.DataFrame({'image_path': train_stone, 'label': 'Stone'})
+df_val_stone = pd.DataFrame({'image_path': val_stone, 'label': 'Stone'})
+df_test_stone = pd.DataFrame({'image_path': test_stone, 'label': 'Stone'})
+
+# Combine and shuffle data
+df_train = pd.concat([df_train_normal, df_train_stone]).sample(frac=1, random_state=42).reset_index(drop=True)
+df_val = pd.concat([df_val_normal, df_val_stone]).sample(frac=1, random_state=42).reset_index(drop=True)
+df_test = pd.concat([df_test_normal, df_test_stone]).sample(frac=1, random_state=42).reset_index(drop=True)
+
+print("\nTraining DataFrame:")
+print(df_train.head())
+print("\nValidation DataFrame:")
+print(df_val.head())
+print("\nTesting DataFrame:")
+print(df_test.head())
+
+print(f"\nTotal training samples: {len(df_train)}")
+print(f"Total validation samples: {len(df_val)}")
+print(f"Total testing samples: {len(df_test)}")
+
+--- Cell 8 ---
+# -------------------- Create Image Data Generators --------------------
+# Rescale pixel values to range [0, 1]
+trainGenerator = ImageDataGenerator(rescale=1. / 255.)
+valGenerator = ImageDataGenerator(rescale=1. / 255.)
+testGenerator = ImageDataGenerator(rescale=1. / 255.)
+
+--- Cell 9 ---
+# -------------------- Load Data Using flow_from_dataframe --------------------
+trainDataset = trainGenerator.flow_from_dataframe(
+    dataframe=df_train,
+    class_mode="categorical",
+    x_col="image_path",
+    y_col="label",
+    batch_size=Batch_size,
+    seed=42,
+    shuffle=True,
+    target_size=(Img_height, Img_width)
+)
+
+testDataset = testGenerator.flow_from_dataframe(
+    dataframe=df_test,
+    class_mode='categorical',
+    x_col="image_path",
+    y_col="label",
+    batch_size=Batch_size,
+    seed=42,
+    shuffle=False,
+    target_size=(Img_height, Img_width)
+)
+
+valDataset = valGenerator.flow_from_dataframe(
+    dataframe=df_val,
+    class_mode='categorical',
+    x_col="image_path",
+    y_col="label",
+    batch_size=Batch_size,
+    seed=42,
+    shuffle=True,
+    target_size=(Img_height, Img_width)
+)
+
+--- Cell 10 ---
+# -------------------- Define the CNN Model (Inspired by AlexNet) --------------------
+model = Sequential([
+    Conv2D(96, (11, 11), activation='relu', strides=(4, 4), input_shape=(Img_height, Img_width, 3)),
+    MaxPooling2D((3, 3), strides=(2, 2)),
+    Conv2D(256, (5, 5), activation='relu', padding='same'),
+    MaxPooling2D((3, 3), strides=(2, 2)),
+    Conv2D(384, (3, 3), activation='relu', padding='same'),
+    Conv2D(384, (3, 3), activation='relu', padding='same'),
+    Conv2D(256, (3, 3), activation='relu', padding='same'),
+    MaxPooling2D((3, 3), strides=(2, 2)),
+    Flatten(),
+    Dense(4096, activation='relu'),
+    Dropout(0.5),
+    Dense(4096, activation='relu'),
+    Dropout(0.5),
+    Dense(2, activation='softmax')  # Output layer for 2 classes
+])
+
+# -------------------- Compile the Model --------------------
+model.compile(optimizer=Adam(learning_rate=0.0001),
+              loss='categorical_crossentropy',
+              metrics=['accuracy'])
+
+model.summary()
+
+--- Cell 12 ---
+# -------------------- Confusion Matrix Visualization --------------------
+# Get predictions from the model on the test dataset
+predictions = model.predict(testDataset)
+
+# Get predicted classes (index of the highest probability)
+predicted_classes_single = np.argmax(predictions, axis=1)
+
+# Get true labels from the test dataset
+true_labels = testDataset.classes
+
+cm = confusion_matrix(true_labels, predicted_classes_single)
+class_labels = list(testDataset.class_indices.keys())
+
+print("\nConfusion Matrix:")
+print(cm)
+
+plt.figure(figsize=(8, 6))
+sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=class_labels, yticklabels=class_labels)
+plt.xlabel('Predicted Label')
+plt.ylabel('True Label')
+plt.title('Confusion Matrix')
+plt.show()
+
+--- Cell 21 ---
+
+import glob
+import cv2
+import matplotlib.pyplot as plt
+
+# Directory where training detection results are saved (e.g., output images)
+data_dir = "runs/detect/train"
+
+# Pattern to match all image files (e.g., jpg, png) in the results directory
+img_dir = os.path.join(data_dir, '*g')
+
+# Retrieve list of image file paths matching the pattern
+files = glob.glob(img_dir)
+
+imgs = []
+for image in files:
+    # Read each image using OpenCV
+    img = cv2.imread(image)
+    imgs.append(img)
+
+    # Display the image with high resolution and large figure size
+    plt.figure(figsize=(10, 10), dpi=200)
+    plt.imshow(img)
+    plt.axis('off')  # Hide axis for cleaner visualization
+    plt.show()
+
+--- Cell 22 ---
+# Define the path to the directory containing test images
+test_path = os.path.join(path, 'test', 'images')
+
+# Use the trained YOLO model to perform inference on images in the test directory
+# - 'source': directory or file to run prediction on
+# - 'save': save annotated prediction images to disk
+# - 'save_txt': save prediction results as text files (bounding box coordinates, class, confidence)
+results = model.predict(
+    source=test_path,
+    save=True,
+    save_txt=True
+)
+
+--- Cell 23 ---
+import random
+# Get the total number of prediction results
+total_results = len(results)
+
+# Randomly select 10 unique indices from the prediction results
+random_indices = random.sample(range(total_results), 10)
+
+for i in random_indices:
+    # Generate an image with predicted bounding boxes and labels overlaid
+    img = results[i].plot()
+
+    # Set figure size for better visualization
+    plt.figure(figsize=(10, 6))
+
+    # Display the annotated image
+    plt.imshow(img)
+
+    # Hide axis ticks and labels for a cleaner look
+    plt.axis('off')
+
+    # Add a title indicating the prediction index
+    plt.title(f'Random Prediction {i+1}')
+
+    # Show the plot
+    plt.show()
+
+============================================================
+  BRAIN TUMOR
+============================================================
+
+--- Cell 1 ---
+import os
+import json
+import warnings
+from io import BytesIO
+from pathlib import Path
+
+from PIL import Image
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import classification_report, confusion_matrix
+
+import tensorflow as tf
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense, Dropout, Flatten
+from tensorflow.keras.optimizers import Adamax
+from tensorflow.keras.metrics import Precision, Recall
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+from tensorflow.keras.callbacks import EarlyStopping, ReduceLROnPlateau, ModelCheckpoint
+
+warnings.filterwarnings("ignore")
+
+tf.random.set_seed(42)
+np.random.seed(42)
+
+
+--- Cell 11 ---
+plt.figure(figsize=(15, 7))
+ax = sns.countplot(data=tr_df, y='Class')
+plt.xlabel('')
+plt.ylabel('')
+plt.title('Count of images in each class', fontsize=20)
+ax.bar_label(ax.containers[0])
+plt.show()
+
+
+--- Cell 12 ---
+plt.figure(figsize=(15, 7))
+ax = sns.countplot(data=ts_df, y='Class')
+ax.set(xlabel='', ylabel='', title='Count of images in each class')
+ax.bar_label(ax.containers[0])
+plt.show()
+
+
+--- Cell 16 ---
+## 2.3 Image preprocessing and generators
+
+
+--- Cell 17 ---
+batch_size = 32
+img_size = (299, 299)
+
+train_gen = ImageDataGenerator(
+    rescale=1/255,
+    brightness_range=(0.8, 1.2),
+    horizontal_flip=True
+)
+
+test_gen = ImageDataGenerator(rescale=1/255)
+
+tr_gen = train_gen.flow_from_dataframe(
+    tr_df,
+    x_col='Class Path',
+    y_col='Class',
+    batch_size=batch_size,
+    target_size=img_size,
+    class_mode='categorical',
+    color_mode='rgb',
+    shuffle=True,
+    seed=42
+)
+
+valid_gen = train_gen.flow_from_dataframe(
+    valid_df,
+    x_col='Class Path',
+    y_col='Class',
+    batch_size=batch_size,
+    target_size=img_size,
+    class_mode='categorical',
+    color_mode='rgb',
+    shuffle=False
+)
+
+ts_gen = test_gen.flow_from_dataframe(
+    ts_df,
+    x_col='Class Path',
+    y_col='Class',
+    batch_size=16,
+    target_size=img_size,
+    class_mode='categorical',
+    color_mode='rgb',
+    shuffle=False
+)
+
+
+--- Cell 19 ---
+class_dict = tr_gen.class_indices
+classes = list(class_dict.keys())
+
+preview_gen = test_gen.flow_from_dataframe(
+    ts_df,
+    x_col='Class Path',
+    y_col='Class',
+    batch_size=16,
+    target_size=img_size,
+    class_mode='categorical',
+    color_mode='rgb',
+    shuffle=False
+)
+
+images, labels = next(preview_gen)
+
+plt.figure(figsize=(20, 20))
+for i, (image, label) in enumerate(zip(images, labels)):
+    plt.subplot(4, 4, i + 1)
+    plt.imshow(image)
+    class_name = classes[np.argmax(label)]
+    plt.title(class_name, color='k', fontsize=15)
+    plt.axis('off')
+
+plt.show()
+
+
+--- Cell 21 ---
+img_shape = (299, 299, 3)
+base_model = tf.keras.applications.Xception(
+    include_top=False,
+    weights='imagenet',
+    input_shape=img_shape,
+    pooling='max'
+)
+
+base_model.trainable = False
+
+model = Sequential([
+    base_model,
+    Flatten(),
+    Dropout(rate=0.3),
+    Dense(128, activation='relu'),
+    Dropout(rate=0.25),
+    Dense(4, activation='softmax')
+])
+
+model.compile(
+    Adamax(learning_rate=0.001),
+    loss='categorical_crossentropy',
+    metrics=['accuracy', Precision(name='precision'), Recall(name='recall')]
+)
+
+model.summary()
+
+
+--- Cell 24 ---
+early_stop = EarlyStopping(
+    monitor='val_loss',
+    patience=4,
+    restore_best_weights=True
+)
+
+reduce_lr = ReduceLROnPlateau(
+    monitor='val_loss',
+    factor=0.5,
+    patience=2,
+    min_lr=1e-6,
+    verbose=1
+)
+
+checkpoint = ModelCheckpoint(
+    'best_brain_tumor_classifier.keras',
+    monitor='val_accuracy',
+    save_best_only=True,
+    verbose=1
+)
+
+hist = model.fit(
+    tr_gen,
+    epochs=10,
+    validation_data=valid_gen,
+    shuffle=False,
+    callbacks=[early_stop, reduce_lr, checkpoint]
+)
+
+
+--- Cell 27 ---
+tr_acc = hist.history['accuracy']
+tr_loss = hist.history['loss']
+tr_per = hist.history['precision']
+tr_recall = hist.history['recall']
+val_acc = hist.history['val_accuracy']
+val_loss = hist.history['val_loss']
+val_per = hist.history['val_precision']
+val_recall = hist.history['val_recall']
+
+index_loss = np.argmin(val_loss)
+val_lowest = val_loss[index_loss]
+index_acc = np.argmax(val_acc)
+acc_highest = val_acc[index_acc]
+index_precision = np.argmax(val_per)
+per_highest = val_per[index_precision]
+index_recall = np.argmax(val_recall)
+recall_highest = val_recall[index_recall]
+
+Epochs = [i + 1 for i in range(len(tr_acc))]
+loss_label = f'Best epoch = {str(index_loss + 1)}'
+acc_label = f'Best epoch = {str(index_acc + 1)}'
+per_label = f'Best epoch = {str(index_precision + 1)}'
+recall_label = f'Best epoch = {str(index_recall + 1)}'
+
+plt.figure(figsize=(20, 12))
+plt.style.use('fivethirtyeight')
+
+plt.subplot(2, 2, 1)
+plt.plot(Epochs, tr_loss, label='Training loss')
+plt.plot(Epochs, val_loss, label='Validation loss')
+plt.scatter(index_loss + 1, val_lowest, s=150, c='blue', label=loss_label)
+plt.title('Training and Validation Loss')
+plt.xlabel('Epochs')
+plt.ylabel('Loss')
+plt.legend()
+plt.grid(True)
+
+plt.subplot(2, 2, 2)
+plt.plot(Epochs, tr_acc, label='Training Accuracy')
+plt.plot(Epochs, val_acc, label='Validation Accuracy')
+plt.scatter(index_acc + 1, acc_highest, s=150, c='blue', label=acc_label)
+plt.title('Training and Validation Accuracy')
+plt.xlabel('Epochs')
+plt.ylabel('Accuracy')
+plt.legend()
+plt.grid(True)
+
+plt.subplot(2, 2, 3)
+plt.plot(Epochs, tr_per, label='Precision')
+plt.plot(Epochs, val_per, label='Validation Precision')
+plt.scatter(index_precision + 1, per_highest, s=150, c='blue', label=per_label)
+plt.title('Precision and Validation Precision')
+plt.xlabel('Epochs')
+plt.ylabel('Precision')
+plt.legend()
+plt.grid(True)
+
+plt.subplot(2, 2, 4)
+plt.plot(Epochs, tr_recall, label='Recall')
+plt.plot(Epochs, val_recall, label='Validation Recall')
+plt.scatter(index_recall + 1, 
+
+--- Cell 31 ---
+ts_gen.reset()
+preds = model.predict(ts_gen, verbose=0)
+y_pred = np.argmax(preds, axis=1)
+
+
+--- Cell 32 ---
+cm = confusion_matrix(ts_gen.classes, y_pred)
+labels = list(class_dict.keys())
+plt.figure(figsize=(10, 8))
+sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=labels, yticklabels=labels)
+plt.xlabel('Predicted Label')
+plt.ylabel('Truth Label')
+plt.show()
+
+
+--- Cell 33 ---
+clr = classification_report(ts_gen.classes, y_pred)
+print(clr)
+
+
+--- Cell 34 ---
+## 5.2 Single-image prediction for upload workflows
+
+
+--- Cell 35 ---
+CLASS_NAMES = list(class_dict.keys())
+FRIENDLY_LABELS = {
+    'glioma': 'Glioma tumor',
+    'meningioma': 'Meningioma tumor',
+    'pituitary': 'Pituitary tumor',
+    'notumor': 'No tumor detected'
+}
+
+def _load_image(image_input, target_size=(299, 299)):
+    if isinstance(image_input, (str, os.PathLike)):
+        img = Image.open(image_input)
+    elif hasattr(image_input, 'read'):
+        img = Image.open(image_input)
+    elif isinstance(image_input, (bytes, bytearray)):
+        img = Image.open(BytesIO(image_input))
+    else:
+        raise TypeError('image_input must be a file path, file-like object, or bytes.')
+
+    img = img.convert('RGB')
+    resized_img = img.resize(target_size)
+    arr = np.asarray(resized_img, dtype=np.float32) / 255.0
+    arr = np.expand_dims(arr, axis=0)
+    return img, resized_img, arr
+
+def predict_uploaded_image(image_input, top_k=4, show=True):
+    original_img, resized_img, arr = _load_image(image_input, target_size=img_size)
+    predictions = model.predict(arr, verbose=0)[0]
+
+    order = np.argsort(predictions)[::-1]
+    top_k = min(top_k, len(CLASS_NAMES))
+    top_indices = order[:top_k]
+
+    results = []
+    for idx in top_indices:
+        class_name = CLASS_NAMES[idx]
+        results.append({
+            'class_name': class_name,
+            'friendly_name': FRIENDLY_LABELS.get(class_name, class_name),
+            'confidence': float(predictions[idx])
+        })
+
+    best = results[0]
+
+    if show:
+        plt.figure(figsize=(12, 10))
+        plt.subplot(2, 1, 1)
+        plt.imshow(resized_img, cmap='gray' if np.asarray(resized_img).ndim == 2 else None)
+        plt.axis('off')
+        plt.title(f"Prediction: {best['friendly_name']} ({best['confidence']*100:.2f}%)")
+
+        plt.subplot(2, 1, 2)
+        bars = plt.barh([r['friendly_name'] for r in results[::-1]], [r['confidence'] for r in results[::-1]])
+        plt.xlabel('Probability')
+        plt.xlim(0, 1)
+        ax = plt.gca()
+        ax.bar_label(bars, fmt='%.2f')
+        plt.t
+
+--- Cell 36 ---
+from IPython.display import display
+import ipywidgets as widgets
+
+# Create upload widget
+upload_widget = widgets.FileUpload(
+    accept='image/*',
+    multiple=False
+)
+
+display(upload_widget)
+
+# Function to handle upload
+def on_upload_change(change):
+    if upload_widget.value:
+        file_info = list(upload_widget.value.values())[0]
+        image_bytes = file_info['content']
+
+        print("Image uploaded! Running prediction...\n")
+
+        result = predict_uploaded_image(image_bytes)
+
+        print("\nFinal Result:")
+        print("Prediction:", result['predicted_label'])
+        print("Confidence:", f"{result['confidence']*100:.2f}%")
+
+upload_widget.observe(on_upload_change, names='value')
+
+--- Cell 37 ---
+from IPython.display import display
+import ipywidgets as widgets
+
+# Create upload widget
+upload_widget = widgets.FileUpload(
+    accept='image/*',
+    multiple=False
+)
+
+display(upload_widget)
+
+# Function to handle upload
+def on_upload_change(change):
+    if upload_widget.value:
+        file_info = list(upload_widget.value.values())[0]
+        image_bytes = file_info['content']
+
+        print("Image uploaded! Running prediction...\n")
+
+        result = predict_uploaded_image(image_bytes)
+
+        print("\nFinal Result:")
+        print("Prediction:", result['predicted_label'])
+        print("Confidence:", f"{result['confidence']*100:.2f}%")
+
+upload_widget.observe(on_upload_change, names='value')
+
+--- Cell 38 ---
+from IPython.display import display
+import ipywidgets as widgets
+
+# Create upload widget
+upload_widget = widgets.FileUpload(
+    accept='image/*',
+    multiple=False
+)
+
+display(upload_widget)
+
+# Function to handle upload
+def on_upload_change(change):
+    if upload_widget.value:
+        file_info = list(upload_widget.value.values())[0]
+        image_bytes = file_info['content']
+
+        print("Image uploaded! Running prediction...\n")
+
+        result = predict_uploaded_image(image_bytes)
+
+        print("\nFinal Result:")
+        print("Prediction:", result['predicted_label'])
+        print("Confidence:", f"{result['confidence']*100:.2f}%")
+
+upload_widget.observe(on_upload_change, names='value')
+
+--- Cell 39 ---
+from IPython.display import display
+import ipywidgets as widgets
+
+# Create upload widget
+upload_widget = widgets.FileUpload(
+    accept='image/*',
+    multiple=False
+)
+
+display(upload_widget)
+
+# Function to handle upload
+def on_upload_change(change):
+    if upload_widget.value:
+        file_info = list(upload_widget.value.values())[0]
+        image_bytes = file_info['content']
+
+        print("Image uploaded! Running prediction...\n")
+
+        result = predict_uploaded_image(image_bytes)
+
+        print("\nFinal Result:")
+        print("Prediction:", result['predicted_label'])
+        print("Confidence:", f"{result['confidence']*100:.2f}%")
+
+upload_widget.observe(on_upload_change, names='value')
+
+--- Cell 40 ---
+from IPython.display import display
+import ipywidgets as widgets
+
+# Create upload widget
+upload_widget = widgets.FileUpload(
+    accept='image/*',
+    multiple=False
+)
+
+display(upload_widget)
+
+# Function to handle upload
+def on_upload_change(change):
+    if upload_widget.value:
+        file_info = list(upload_widget.value.values())[0]
+        image_bytes = file_info['content']
+
+        print("Image uploaded! Running prediction...\n")
+
+        result = predict_uploaded_image(image_bytes)
+
+        print("\nFinal Result:")
+        print("Prediction:", result['predicted_label'])
+        print("Confidence:", f"{result['confidence']*100:.2f}%")
+
+upload_widget.observe(on_upload_change, names='value')
