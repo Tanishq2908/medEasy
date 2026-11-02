@@ -1,0 +1,15 @@
+# docker compose up --build   ->  http://localhost:5000
+services:
+  medeasy:
+    build: .
+    ports:
+      - "5000:5000"
+    env_file:
+      - path: .env
+        required: false
+    volumes:
+      - medeasy-data:/data
+    restart: unless-stopped
+
+volumes:
+  medeasy-data:

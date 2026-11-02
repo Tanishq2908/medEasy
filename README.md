@@ -48,6 +48,30 @@ In production Flask also serves the built frontend, so the whole app is one proc
 PDF text is extracted on the server (pdfplumber). Scanned PDFs and photos are read by the Groq vision model when a key
 is set; otherwise they are OCR'd in the browser with Tesseract.js.
 
+## Run anywhere with Docker (recommended)
+
+The only requirement is [Docker](https://docs.docker.com/get-docker/), on Windows, macOS or Linux. No Python or Node
+setup is needed.
+
+```bash
+docker compose up --build
+```
+
+Open http://localhost:5000. Accounts and saved reports are kept in the `medeasy-data` volume across restarts.
+To enable the AI features, put `GROQ_API_KEY=...` (and a `JWT_SECRET`) in a `.env` file next to `docker-compose.yml`.
+
+Without Compose:
+
+```bash
+docker build -t medeasy .
+```
+
+```bash
+docker run -p 5000:5000 -v medeasy-data:/data --env-file .env medeasy
+```
+
+The same image runs on any container host (Render "Docker" runtime, Railway, Fly.io, Google Cloud Run, Azure, AWS).
+
 ## Run locally
 
 Requires Python 3.11+ and Node 20+.
