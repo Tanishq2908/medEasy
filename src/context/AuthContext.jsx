@@ -1,30 +1,35 @@
-import React, { createContext, useState, useContext, useEffect } from 'react';
+import { createContext, useCallback, useContext, useEffect, useState } from 'react';
+import { api } from '../api';
 
-const AuthContext = createContext();
+const AuthContext = createContext(null);
 
-export const AuthProvider = ({ children }) => {
-  const [user, setUser] = useState(JSON.parse(localStorage.getItem('user')) || null);
-  const [token, setToken] = useState(localStorage.getItem('token') || null);
+const read = (k) => { try { return localStorage.getItem(k); } catch { return null; } };
+const write = (k, v) => { try { v == null ? localStorage.removeItem(k) : localStorage.setItem(k, v); } catch { /* storage unavailable */ } };
 
-  const login = (userData, userToken) => {
-    localStorage.setItem('user', JSON.stringify(userData));
-    localStorage.setItem('token', userToken);
-    setUser(userData);
-    setToken(userToken);
-  };
+export function AuthProvider({ children }) {
+  const [user, setUser] = useState(() => {
+    try { return JSON.parse(read('medeasy-user')) || null; } catch { return null; }
+  });
 
-  const logout = () => {
-    localStorage.removeItem('user');
-    localStorage.removeItem('token');
+  const signIn = useCallback((u, token) => {
+    write('medeasy-token', token);
+    write('medeasy-user', JSON.stringify(u));
+    setUser(u);
+  }, []);
+
+  const signOut = useCallback(() => {
+    write('medeasy-token', null);
+    write('medeasy-user', null);
     setUser(null);
-    setToken(null);
-  };
+  }, []);
 
-  return (
-    <AuthContext.Provider value={{ user, token, login, logout }}>
-      {children}
-    </AuthContext.Provider>
-  );
-};
+  // Validate a stored session on load (server secret may have rotated).
+  useEffect(() => {
+    if (!read('medeasy-token')) return;
+    api('/api/auth/me').then((d) => setUser(d.user)).catch((e) => { if (e.status === 401) signOut(); });
+  }, [signOut]);
+
+  return <AuthContext.Provider value={{ user, signIn, signOut }}>{children}</AuthContext.Provider>;
+}
 
 export const useAuth = () => useContext(AuthContext);

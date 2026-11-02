@@ -1,12 +1,14 @@
-Flask>=3.0.0
-flask-cors>=4.0.0
-gunicorn>=21.2.0
-pillow>=10.0.0
-torch>=2.0.0
-torchvision>=0.15.0
-timm>=0.9.0
-opencv-python-headless>=4.8.0
-scipy>=1.10.0
-numpy>=1.24.0
-python-dotenv>=1.0.0
-requests>=2.31.0
+# MedEasy API (python -m backend.app  or  gunicorn backend.app:app)
+Flask>=3.0,<4
+flask-cors>=4.0
+gunicorn>=22.0
+PyJWT>=2.8
+python-dotenv>=1.0
+requests>=2.31
+pdfplumber>=0.11
+# The saved models in backend/models were trained with this exact scikit-learn version.
+# If you change it, retrain with:  python -m backend.ml.train
+scikit-learn==1.9.1
+numpy>=2.0
+pandas>=2.2
+joblib>=1.4

@@ -1,27 +1,25 @@
 {
-  "name": "doctor-ai",
+  "name": "medeasy",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:api": "python -m backend.app",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test:api": "python -m pytest backend/tests -q",
+    "train": "python -m backend.ml.train"
   },
   "dependencies": {
-    "@google/generative-ai": "^0.24.1",
     "@tailwindcss/vite": "^4.2.2",
-    "clsx": "^2.1.1",
-    "framer-motion": "^12.38.0",
     "lucide-react": "^1.7.0",
     "pdfjs-dist": "^5.5.207",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
-    "react-hook-form": "^7.72.0",
     "react-router-dom": "^7.13.2",
     "recharts": "^3.8.1",
-    "tailwind-merge": "^3.5.0",
     "tailwindcss": "^4.2.2",
     "tesseract.js": "^7.0.0"
   },

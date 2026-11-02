@@ -1,81 +1,77 @@
-import { Link, useNavigate } from 'react-router-dom';
-import { Button } from './Button';
-import { Stethoscope, Sun, Moon, LogOut } from 'lucide-react';
+import { useState } from 'react';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
+import { FlaskConical, LogOut, Menu, Moon, Sun, X } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 import { useAuth } from '../context/AuthContext';
 
+const links = [
+  { to: '/analyze', label: 'Analyze report' },
+  { to: '/dashboard', label: 'My reports', auth: true },
+  { to: '/models', label: 'Model performance' },
+];
+
 export default function Navbar() {
   const { theme, toggleTheme } = useTheme();
-  const { user, logout } = useAuth();
+  const { user, signOut } = useAuth();
   const navigate = useNavigate();
+  const [open, setOpen] = useState(false);
+  const visible = links.filter((l) => !l.auth || user);
 
-  const handleSignOut = () => {
-    logout();
-    navigate('/login');
-  };
+  const linkCls = ({ isActive }) =>
+    `rounded-lg px-3 py-2 text-sm font-semibold transition-colors ${isActive ? 'text-[var(--ink)] bg-[var(--surface-2)]' : 'text-[var(--ink-2)] hover:text-[var(--ink)]'}`;
 
   return (
-    <nav className="sticky top-0 z-[100] w-full bg-[var(--bg-main)]/70 backdrop-blur-2xl border-b border-[var(--glass-border)] transition-all duration-300">
-      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        {/* Left: Logo */}
-        <Link to="/" className="flex items-center gap-3 group">
-          <div className="w-9 h-9 bg-gradient-to-br from-cyan-500 to-violet-600 rounded-xl flex items-center justify-center shadow-lg shadow-cyan-500/20 group-hover:shadow-cyan-500/40 transition-shadow">
-            <Stethoscope className="h-5 w-5 text-white" />
-          </div>
-          <span className="text-lg font-extrabold tracking-tight text-[var(--text-main)]">
-            Med<span className="text-cyan-500">Ez</span>
-          </span>
+    <nav className="sticky top-0 z-40 border-b border-[var(--border)] bg-[var(--surface)]/90 backdrop-blur">
+      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6">
+        <Link to="/" className="flex items-center gap-2.5" onClick={() => setOpen(false)}>
+          <span className="grid h-8 w-8 place-items-center rounded-lg bg-[var(--brand)] text-white"><FlaskConical className="h-4.5 w-4.5" /></span>
+          <span className="text-base font-bold tracking-tight">MedEasy</span>
         </Link>
 
-        {/* Right: Actions */}
-        <div className="flex items-center gap-3">
-          {user && (
-            <>
-              <Link
-                to={user.role === 'lab' ? '/lab-portal' : '/patient-dashboard'}
-                className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] hover:text-cyan-500 transition-colors px-4 py-2 rounded-lg hover:bg-cyan-500/5"
-              >
-                Dashboard
-              </Link>
-            </>
-          )}
+        <div className="hidden items-center gap-1 md:flex">
+          {visible.map((l) => <NavLink key={l.to} to={l.to} className={linkCls}>{l.label}</NavLink>)}
+        </div>
 
-          <button
-            onClick={toggleTheme}
-            className="w-9 h-9 rounded-xl flex items-center justify-center text-[var(--text-muted)] hover:text-[var(--text-main)] hover:bg-white/10 transition-all border border-transparent hover:border-[var(--glass-border)]"
-            aria-label="Toggle theme"
-          >
-            {theme === 'dark' ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
+        <div className="flex items-center gap-2">
+          <button onClick={toggleTheme} className="btn btn-ghost btn-sm w-9 px-0" aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} theme`}>
+            {theme === 'dark' ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
           </button>
-
-          {!user ? (
-            <div className="flex items-center gap-2 ml-1">
-              <Link to="/login">
-                <Button variant="ghost" className="text-[11px] font-bold uppercase tracking-wider h-9 px-4 rounded-xl">Login</Button>
-              </Link>
-              <Link to="/signup">
-                <Button variant="primary" className="text-[11px] font-bold uppercase tracking-wider h-9 px-5 rounded-xl shadow-lg shadow-cyan-500/20">Sign Up</Button>
-              </Link>
-            </div>
-          ) : (
-            <div className="flex items-center gap-3 ml-1">
-              <div className="hidden md:block text-right">
-                <p className="text-[11px] font-bold text-[var(--text-main)] leading-none">{user.name}</p>
-                <p className="text-[9px] text-cyan-500 font-semibold uppercase tracking-wider mt-0.5">
-                  {user.role === 'lab' ? 'Lab Technician' : 'Patient'}
-                </p>
-              </div>
-              <button
-                onClick={handleSignOut}
-                className="w-9 h-9 rounded-xl flex items-center justify-center text-rose-400 hover:bg-rose-500/10 hover:text-rose-500 transition-all border border-transparent hover:border-rose-500/20"
-                title="Sign Out"
-              >
-                <LogOut className="w-4 h-4" />
+          {user ? (
+            <div className="hidden items-center gap-2 md:flex">
+              <span className="text-sm font-semibold muted">{user.name}</span>
+              <button className="btn btn-ghost btn-sm" onClick={() => { signOut(); navigate('/'); }}>
+                <LogOut className="h-4 w-4" /> Sign out
               </button>
             </div>
+          ) : (
+            <div className="hidden items-center gap-2 md:flex">
+              <Link to="/login" className="btn btn-ghost btn-sm">Sign in</Link>
+              <Link to="/signup" className="btn btn-primary btn-sm">Create account</Link>
+            </div>
           )}
+          <button className="btn btn-ghost btn-sm w-9 px-0 md:hidden" onClick={() => setOpen((o) => !o)} aria-label="Menu" aria-expanded={open}>
+            {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </button>
         </div>
       </div>
+
+      {open && (
+        <div className="border-t border-[var(--border)] px-4 py-3 md:hidden">
+          <div className="flex flex-col gap-1">
+            {visible.map((l) => <NavLink key={l.to} to={l.to} className={linkCls} onClick={() => setOpen(false)}>{l.label}</NavLink>)}
+            {user ? (
+              <button className="btn btn-ghost btn-sm justify-start" onClick={() => { signOut(); setOpen(false); navigate('/'); }}>
+                <LogOut className="h-4 w-4" /> Sign out ({user.name})
+              </button>
+            ) : (
+              <div className="mt-2 flex gap-2">
+                <Link to="/login" className="btn btn-secondary btn-sm flex-1" onClick={() => setOpen(false)}>Sign in</Link>
+                <Link to="/signup" className="btn btn-primary btn-sm flex-1" onClick={() => setOpen(false)}>Create account</Link>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
     </nav>
   );
 }

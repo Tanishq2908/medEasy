@@ -1,29 +1,21 @@
+# One web service: builds the React app, then Flask serves it together with the API.
 services:
-  # Node.js Express API Server
   - type: web
-    name: medeasy-node-backend
-    env: node
+    name: medeasy
+    runtime: python
     plan: free
-    rootDir: server
-    buildCommand: npm install
-    startCommand: npm start
+    buildCommand: pip install -r requirements.txt && npm ci && npm run build
+    startCommand: gunicorn backend.app:app --workers 2 --timeout 120 --bind 0.0.0.0:$PORT
+    healthCheckPath: /api/health
     envVars:
-      - key: MONGO_URI
-        sync: false
-      - key: JWT_SECRET
-        sync: false
-      - key: GROQ_API_KEY
-        sync: false
-
-  # Python Flask ML Server
-  - type: web
-    name: medeasy-python-flask
-    env: python
-    plan: free
-    buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn app:app --timeout 120
-    envVars:
-      - key: GROQ_API_KEY
-        sync: false
       - key: PYTHON_VERSION
-        value: 3.10.12
+        value: 3.12.8
+      - key: NODE_VERSION
+        value: 22.12.0
+      - key: JWT_SECRET
+        generateValue: true
+      - key: GROQ_API_KEY
+        sync: false
+      # Free instances have no persistent disk; attach one and point this at it to keep accounts/reports.
+      - key: DATABASE_PATH
+        value: /opt/render/project/src/backend/data/medeasy.db
