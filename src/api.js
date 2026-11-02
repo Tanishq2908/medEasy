@@ -1,7 +1,8 @@
 // Single API client. In development Vite proxies /api to the Flask server;
-// in production Flask serves this app, so relative URLs work. Set VITE_API_URL
-// only when the frontend is hosted separately from the API.
-const BASE = (import.meta.env.VITE_API_URL || '').replace(/\/$/, '');
+// on Vercel, vercel.json rewrites /api to Render; when Flask serves the app, relative
+// URLs also work. Set VITE_BACKEND_URL only to call an API on another origin directly.
+// (Deliberately not VITE_API_URL: old deployments set that to a server that no longer exists.)
+const BASE = (import.meta.env.VITE_BACKEND_URL || '').replace(/\/$/, '');
 
 export class ApiError extends Error {
   constructor(message, status, data) {
@@ -29,9 +30,13 @@ export async function api(path, { method = 'GET', body, form } = {}) {
   try {
     res = await fetch(`${BASE}${path}`, { method, headers, body: payload });
   } catch {
-    throw new ApiError('Cannot reach the MedEasy server. Is the backend running?', 0);
+    throw new ApiError(`Cannot reach the MedEasy server (${BASE || window.location.origin}${path}). If the backend is on Render's free plan it may be waking up — try again in a minute.`, 0);
   }
-  const data = await res.json().catch(() => ({}));
+  const data = await res.json().catch(() => null);
+  if (data === null) {
+    // Non-JSON answer: usually the proxy reached the wrong host, or Render is starting/failed.
+    throw new ApiError(`The server at ${BASE || window.location.origin}/api returned an unexpected response (HTTP ${res.status}). Check that the backend URL in vercel.json is your Render URL.`, res.status);
+  }
   if (!res.ok) throw new ApiError(data.error || `Request failed (${res.status})`, res.status, data);
   return data;
 }
