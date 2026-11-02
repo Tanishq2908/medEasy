@@ -104,6 +104,12 @@ npm run train
 Set `GROQ_API_KEY` in the Render dashboard if you want the AI features. Free instances have no persistent disk, so attach
 one and point `DATABASE_PATH` at it to keep accounts and reports across deploys.
 
+### Frontend on Vercel
+
+`vercel.json` builds the React app and forwards `/api/*` to the Render service, so the browser only ever talks to the
+Vercel domain (no CORS setup needed). If your Render service URL is not `https://medeasy.onrender.com`, change the
+`destination` in `vercel.json`. React Router deep links (e.g. `/reports/3`) are rewritten to `index.html`.
+
 ## API
 
 | Method | Path | Description |
